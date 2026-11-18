@@ -1,0 +1,50 @@
+{
+  "automation": "OutLawZ Morning Post",
+  "lastRun": {
+    "startedAt": null,
+    "status": "blocked",
+    "summary": "The referenced run generated content but Dropbox upload and Metricool scheduling failed. No post was scheduled.",
+    "topic": "Vercel Preview Deployments",
+    "caption": "",
+    "imagePath": "",
+    "githubCommitUrl": null,
+    "metricoolPostId": null,
+    "scheduledAt": null,
+    "provider": null,
+    "steps": [
+      {
+        "name": "Generation",
+        "status": "completed"
+      },
+      {
+        "name": "GitHub commit/upload",
+        "status": "not_started"
+      },
+      {
+        "name": "Metricool scheduling",
+        "status": "blocked"
+      },
+      {
+        "name": "Metricool verification",
+        "status": "not_started"
+      }
+    ],
+    "errors": [
+      "Historical file-transfer error: generated file references were unavailable to connector egress. This run predates the GitHub migration."
+    ]
+  },
+  "nextRunAt": null,
+  "timezone": "Asia/Karachi",
+  "plannedSchedule": "Daily at 08:00 PKT, pending restoration of the existing automation",
+  "rules": {
+    "brandId": 7508377,
+    "provider": "Facebook",
+    "scheduleOnly": true,
+    "verifyBeforeSuccess": [
+      "post text",
+      "media",
+      "provider",
+      "scheduled time"
+    ]
+  }
+}
