@@ -1,0 +1,37 @@
+{
+  "runId": "2026-11-18-manual-once",
+  "startedAt": "2026-11-18T14:56:19+05:00",
+  "finishedAt": "2026-11-18T14:56:19+05:00",
+  "status": "failed",
+  "topic": "OutLawZ technology post",
+  "caption": "",
+  "imagePath": null,
+  "githubCommitUrl": null,
+  "metricoolPostId": null,
+  "scheduledAt": null,
+  "provider": null,
+  "steps": [
+    {
+      "name": "Generation",
+      "status": "failed",
+      "at": "2026-11-18T14:56:19+05:00",
+      "details": "Image generation service returned an internal error."
+    },
+    {
+      "name": "GitHub commit/upload",
+      "status": "not_started"
+    },
+    {
+      "name": "Metricool scheduling",
+      "status": "not_started"
+    },
+    {
+      "name": "Metricool verification",
+      "status": "not_started"
+    }
+  ],
+  "errors": [
+    "Image generation failed with an internal error; no asset was committed and no Metricool post was scheduled."
+  ],
+  "nextRunAt": null
+}
