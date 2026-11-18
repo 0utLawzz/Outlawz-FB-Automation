@@ -1,10 +1,12 @@
 {
   "automation": "OutLawZ Morning Post",
   "lastRun": {
-    "startedAt": null,
-    "status": "blocked",
-    "summary": "The referenced run generated content but Dropbox upload and Metricool scheduling failed. No post was scheduled.",
-    "topic": "Vercel Preview Deployments",
+    "runId": "2026-11-18-manual-once",
+    "startedAt": "2026-11-18T14:56:19+05:00",
+    "finishedAt": "2026-11-18T14:56:19+05:00",
+    "status": "failed",
+    "summary": "One-time run stopped because image generation returned an internal error. No GitHub asset was committed and no Metricool post was scheduled.",
+    "topic": "OutLawZ technology post",
     "caption": "",
     "imagePath": "",
     "githubCommitUrl": null,
@@ -12,27 +14,22 @@
     "scheduledAt": null,
     "provider": null,
     "steps": [
-      {
-        "name": "Generation",
-        "status": "completed"
-      },
-      {
-        "name": "GitHub commit/upload",
-        "status": "not_started"
-      },
-      {
-        "name": "Metricool scheduling",
-        "status": "blocked"
-      },
-      {
-        "name": "Metricool verification",
-        "status": "not_started"
-      }
+      {"name": "Generation", "status": "failed"},
+      {"name": "GitHub commit/upload", "status": "not_started"},
+      {"name": "Metricool scheduling", "status": "not_started"},
+      {"name": "Metricool verification", "status": "not_started"}
     ],
-    "errors": [
-      "Historical file-transfer error: generated file references were unavailable to connector egress. This run predates the GitHub migration."
-    ]
+    "errors": ["Image generation service returned an internal error."]
   },
+  "history": [
+    {
+      "runId": "historical-dropbox-failure",
+      "status": "blocked",
+      "summary": "The referenced run generated Vercel Preview Deployments content but Dropbox upload and Metricool scheduling failed. No post was scheduled.",
+      "topic": "Vercel Preview Deployments",
+      "errors": ["Generated file references were unavailable for connector egress. This run predates the GitHub migration."]
+    }
+  ],
   "nextRunAt": null,
   "timezone": "Asia/Karachi",
   "plannedSchedule": "Daily at 08:00 PKT, pending restoration of the existing automation",
@@ -40,11 +37,6 @@
     "brandId": 7508377,
     "provider": "Facebook",
     "scheduleOnly": true,
-    "verifyBeforeSuccess": [
-      "post text",
-      "media",
-      "provider",
-      "scheduled time"
-    ]
+    "verifyBeforeSuccess": ["post text", "media", "provider", "scheduled time"]
   }
 }
