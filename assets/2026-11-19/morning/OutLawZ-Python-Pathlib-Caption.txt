@@ -1,0 +1,10 @@
+Hard-coded file paths can break when a workflow moves between Windows and Linux.
+
+Python's pathlib keeps path building readable and platform-aware:
+
+from pathlib import Path
+csv_file = Path("data") / "reports" / "daily.csv"
+
+Use methods such as .exists(), .mkdir(), and .glob() to manage files without string-heavy path logic. Start with pathlib when writing scripts that touch files.
+
+#Python #Pathlib #Automation #DeveloperTips #CrossPlatform #OutLawZAutomation
