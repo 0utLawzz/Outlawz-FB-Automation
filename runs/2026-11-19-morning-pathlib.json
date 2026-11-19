@@ -1,0 +1,46 @@
+{
+  "runId": "2026-11-19-morning-pathlib",
+  "startedAt": "2026-11-19T03:52:00Z",
+  "finishedAt": "2026-11-19T03:54:00Z",
+  "status": "blocked",
+  "topic": "Python pathlib — cleaner cross-platform file paths",
+  "caption": "Hard-coded file paths can break when a workflow moves between Windows and Linux.\n\nPython's pathlib keeps path building readable and platform-aware:\n\nfrom pathlib import Path\ncsv_file = Path(\"data\") / \"reports\" / \"daily.csv\"\n\nUse methods such as .exists(), .mkdir(), and .glob() to manage files without string-heavy path logic. Start with pathlib when writing scripts that touch files.\n\n#Python #Pathlib #Automation #DeveloperTips #CrossPlatform #OutLawZAutomation",
+  "imagePath": "",
+  "localImagePath": "/mnt/data/OutLawZ-Python-Pathlib-Paths.png",
+  "captionPath": "assets/2026-11-19/morning/OutLawZ-Python-Pathlib-Caption.txt",
+  "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0b6364f0947241b536c23b04e9ed7f304b3ba9be",
+  "metricoolPostId": null,
+  "scheduledAt": null,
+  "targetScheduledAt": "2026-11-20T08:00:00+05:00",
+  "provider": null,
+  "steps": [
+    {
+      "name": "Generation",
+      "status": "completed",
+      "timestamp": "2026-11-19T03:52:00Z"
+    },
+    {
+      "name": "Caption saved to GitHub",
+      "status": "completed",
+      "timestamp": "2026-11-19T03:54:00Z"
+    },
+    {
+      "name": "GitHub PNG upload/commit",
+      "status": "blocked",
+      "timestamp": "2026-11-19T03:54:00Z"
+    },
+    {
+      "name": "Metricool scheduling",
+      "status": "blocked",
+      "timestamp": "2026-11-19T03:54:00Z"
+    },
+    {
+      "name": "Metricool verification",
+      "status": "not_started",
+      "timestamp": null
+    }
+  ],
+  "errors": [
+    "Generated PNG exists locally, but the connected GitHub tools available in this session can only create text files; binary PNG upload is unavailable. Dropbox was not used. Scheduling stopped because the PNG could not be committed and a public media URL could not be verified."
+  ]
+}
