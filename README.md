@@ -7,25 +7,27 @@ GitHub home for OutLawZ Facebook post assets, captions, run records, and the sta
 - Metricool brand: `7508377` (`net1outlawzz`)
 - Network: Facebook only
 - Timezone: `Asia/Karachi`
-- Planned cadence: daily at 08:00 PKT, after the existing morning automation is restored
+- Planned cadence: daily, flexible morning target around 08:00 PKT
 - Scheduling only: never publish immediately
 - A run is successful only after querying Metricool and confirming the exact post text, media, Facebook provider, and scheduled time.
 - Keep previous assets and run history. Do not delete them during migration.
-- Dropbox must not be used.
+- Dropbox is read-only legacy archive only; no new uploads.
 
 ## Repository layout
 
-- `assets/`: generated post images and captions, organized by run date
+- `assets/YYYY-MM-DD/morning/`: generated post image and caption
 - `runs/`: append-only per-run status records
 - `docs/status.json`: current dashboard data
 - `docs/index.html`: single-page status dashboard
 
 ## Status dashboard
 
-The dashboard is a static page reading `docs/status.json`. Enable GitHub Pages with the **GitHub Actions** source and deploy the `docs` directory to publish it. Do not put credentials, private tokens, or private post data in the public dashboard.
+The dashboard reads `docs/status.json`. The GitHub Actions workflow deploys the `docs` directory when it changes; GitHub Pages must be configured to use **GitHub Actions** as its source. Do not put credentials, private tokens, or private post data in the public dashboard.
 
 ## Automation integration status
 
-This repository was empty when connected. The dashboard and its data contract are being established first. The existing Codex automations still need to be updated to remove Dropbox, commit generated PNG/TXT assets to this repository, schedule through Metricool, query Metricool for verification, and append a run record. No publishing automation is considered migrated until that integration is in place.
+The existing **OutLawZ Morning Post** automation has been updated to use GitHub for new files and to remove Dropbox writes. It remains enabled on a daily flexible morning schedule.
 
-Recommended run record fields: `runId`, `startedAt`, `finishedAt`, `status`, `topic`, `caption`, `imagePath`, `githubCommitUrl`, `metricoolPostId`, `scheduledAt`, `provider`, `steps`, `errors`, and `nextRunAt`. Each step should include a status and timestamp. Keep history append-only.
+The current run generated a PNG and caption. The caption was committed, but the connected GitHub tools cannot upload the generated binary PNG in this session. Therefore, no media URL could be verified and Metricool scheduling was stopped. The dashboard records this as `blocked`; it must not show success until Metricool confirms caption, media, Facebook provider, and scheduled time.
+
+Recommended run record fields: `runId`, `startedAt`, `finishedAt`, `status`, `topic`, `caption`, `imagePath`, `captionPath`, `githubCommitUrl`, `metricoolPostId`, `scheduledAt`, `provider`, `steps`, `errors`, and `nextRunAt`. Each step should include a status and timestamp. Keep history append-only.
