@@ -1,25 +1,46 @@
 {
   "automation": "OutLawZ Morning Post",
   "lastRun": {
-    "runId": "2026-11-18-manual-once",
-    "startedAt": "2026-11-18T14:56:19+05:00",
-    "finishedAt": "2026-11-18T14:56:19+05:00",
-    "status": "failed",
-    "summary": "One-time run stopped because image generation returned an internal error. No GitHub asset was committed and no Metricool post was scheduled.",
-    "topic": "OutLawZ technology post",
-    "caption": "",
+    "runId": "2026-11-19-morning-pathlib",
+    "startedAt": "2026-11-19T03:52:00Z",
+    "finishedAt": "2026-11-19T03:54:00Z",
+    "status": "blocked",
+    "summary": "Generated a fresh Python pathlib PNG and caption. Caption was committed to GitHub, but the binary PNG could not be uploaded through the available GitHub connector; Metricool scheduling was stopped.",
+    "topic": "Python pathlib — cleaner cross-platform file paths",
+    "caption": "Hard-coded file paths can break when a workflow moves between Windows and Linux.\n\nPython's pathlib keeps path building readable and platform-aware:\n\nfrom pathlib import Path\ncsv_file = Path(\"data\") / \"reports\" / \"daily.csv\"\n\nUse methods such as .exists(), .mkdir(), and .glob() to manage files without string-heavy path logic. Start with pathlib when writing scripts that touch files.\n\n#Python #Pathlib #Automation #DeveloperTips #CrossPlatform #OutLawZAutomation",
     "imagePath": "",
-    "githubCommitUrl": null,
+    "localImagePath": "/mnt/data/OutLawZ-Python-Pathlib-Paths.png",
+    "captionPath": "assets/2026-11-19/morning/OutLawZ-Python-Pathlib-Caption.txt",
+    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0b6364f0947241b536c23b04e9ed7f304b3ba9be",
     "metricoolPostId": null,
     "scheduledAt": null,
+    "targetScheduledAt": "2026-11-20T08:00:00+05:00",
     "provider": null,
     "steps": [
-      {"name": "Generation", "status": "failed"},
-      {"name": "GitHub commit/upload", "status": "not_started"},
-      {"name": "Metricool scheduling", "status": "not_started"},
-      {"name": "Metricool verification", "status": "not_started"}
+      {
+        "name": "Generation",
+        "status": "completed"
+      },
+      {
+        "name": "Caption saved to GitHub",
+        "status": "completed"
+      },
+      {
+        "name": "GitHub PNG upload/commit",
+        "status": "blocked"
+      },
+      {
+        "name": "Metricool scheduling",
+        "status": "blocked"
+      },
+      {
+        "name": "Metricool verification",
+        "status": "not_started"
+      }
     ],
-    "errors": ["Image generation service returned an internal error."]
+    "errors": [
+      "PNG binary upload is unavailable in the connected GitHub tools. Dropbox was not used. Metricool scheduling and verification were not attempted because the media URL could not be verified."
+    ]
   },
   "history": [
     {
@@ -27,16 +48,42 @@
       "status": "blocked",
       "summary": "The referenced run generated Vercel Preview Deployments content but Dropbox upload and Metricool scheduling failed. No post was scheduled.",
       "topic": "Vercel Preview Deployments",
-      "errors": ["Generated file references were unavailable for connector egress. This run predates the GitHub migration."]
+      "errors": [
+        "Generated file references were unavailable for connector egress. This run predates the GitHub migration."
+      ]
+    },
+    {
+      "runId": "2026-11-18-manual-once",
+      "status": "failed",
+      "summary": "One-time run stopped because image generation returned an internal error. No GitHub asset was committed and no Metricool post was scheduled.",
+      "topic": "OutLawZ technology post",
+      "errors": [
+        "Image generation service returned an internal error."
+      ]
+    },
+    {
+      "runId": "2026-11-19-morning-pathlib",
+      "status": "blocked",
+      "summary": "Fresh image and caption generated; caption committed to GitHub. PNG binary upload unavailable, so scheduling stopped.",
+      "topic": "Python pathlib — cleaner cross-platform file paths",
+      "errors": [
+        "PNG binary upload unavailable in connected GitHub tools; no post scheduled."
+      ]
     }
   ],
-  "nextRunAt": null,
+  "nextRunAt": "2026-11-20T08:00:00+05:00",
   "timezone": "Asia/Karachi",
-  "plannedSchedule": "Daily at 08:00 PKT, pending restoration of the existing automation",
+  "plannedSchedule": "Daily, flexible morning target around 08:00 PKT; existing automation enabled",
   "rules": {
     "brandId": 7508377,
     "provider": "Facebook",
     "scheduleOnly": true,
-    "verifyBeforeSuccess": ["post text", "media", "provider", "scheduled time"]
+    "verifyBeforeSuccess": [
+      "post text",
+      "media",
+      "provider",
+      "scheduled time"
+    ],
+    "storage": "GitHub primary; Dropbox read-only legacy archive only"
   }
 }
