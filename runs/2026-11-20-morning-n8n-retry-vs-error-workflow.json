@@ -1,0 +1,60 @@
+{
+  "runId": "2026-11-20-morning-n8n-retry-vs-error-workflow",
+  "startedAt": "2026-11-20T08:39:35+05:00",
+  "finishedAt": "2026-11-20T08:41:32+05:00",
+  "status": "blocked",
+  "topic": "n8n Retry vs Error Workflow — transient failures and recovery",
+  "caption": "In n8n, retries and error workflows solve different problems.\n\nUse node-level retries for temporary failures—like a short API timeout. If an execution still fails, a configured Error Workflow can run a separate path for logging, notifications, and recovery actions.\n\nRetries are not a recovery plan. Set sensible limits and make the next action clear.\n\n#n8n #WorkflowAutomation #ErrorHandling #Automation #DeveloperTips #OutLawZAutomation",
+  "imagePath": "",
+  "localImagePath": "/mnt/data/OutLawZ-n8n-Retry-vs-Error-Workflow.png",
+  "captionPath": "assets/2026-11-20/morning/n8n-retry-vs-error-workflow-caption.txt",
+  "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/73ec9eb57f04fb6d3fbec415a95c063863bec843",
+  "metricoolPostId": null,
+  "scheduledAt": null,
+  "targetScheduledAt": "2026-11-21T08:00:00+05:00",
+  "provider": null,
+  "targetProvider": "Facebook",
+  "steps": [
+    {
+      "name": "Inspect recent assets and captions",
+      "status": "completed",
+      "timestamp": "2026-11-20T08:39:35+05:00",
+      "details": "Latest available pathlib run and caption inspected; directory listing of all older assets could not be retrieved."
+    },
+    {
+      "name": "Generate original PNG",
+      "status": "completed",
+      "timestamp": "2026-11-20T08:39:35+05:00"
+    },
+    {
+      "name": "Create caption TXT",
+      "status": "completed",
+      "timestamp": "2026-11-20T08:39:35+05:00"
+    },
+    {
+      "name": "GitHub caption commit",
+      "status": "completed",
+      "timestamp": "2026-11-20T08:41:32+05:00",
+      "details": "Caption committed: assets/2026-11-20/morning/n8n-retry-vs-error-workflow-caption.txt"
+    },
+    {
+      "name": "GitHub PNG upload/commit",
+      "status": "blocked",
+      "timestamp": "2026-11-20T08:41:32+05:00"
+    },
+    {
+      "name": "Metricool scheduling",
+      "status": "blocked",
+      "timestamp": "2026-11-20T08:41:32+05:00",
+      "details": "Stopped because PNG could not be committed and a public raw media URL is unavailable."
+    },
+    {
+      "name": "Metricool verification",
+      "status": "not_started",
+      "timestamp": "2026-11-20T08:41:32+05:00"
+    }
+  ],
+  "errors": [
+    "GitHub binary PNG upload could not be completed with the available connector/file handoff. The Desktop Commander device is offline, so the local generated PNG cannot be transferred to GitHub in this run. Dropbox was not used. Metricool scheduling and verification were stopped because a committed public image URL is unavailable."
+  ]
+}
