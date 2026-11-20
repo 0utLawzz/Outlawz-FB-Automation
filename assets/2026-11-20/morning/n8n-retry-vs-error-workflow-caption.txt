@@ -1,0 +1,7 @@
+In n8n, retries and error workflows solve different problems.
+
+Use node-level retries for temporary failures—like a short API timeout. If an execution still fails, a configured Error Workflow can run a separate path for logging, notifications, and recovery actions.
+
+Retries are not a recovery plan. Set sensible limits and make the next action clear.
+
+#n8n #WorkflowAutomation #ErrorHandling #Automation #DeveloperTips #OutLawZAutomation
