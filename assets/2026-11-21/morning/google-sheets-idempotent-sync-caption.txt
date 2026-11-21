@@ -1,0 +1,5 @@
+Automation runs can repeat—webhooks retry, schedules fire again, or a timeout happens after a row was written.
+
+To prevent duplicate records in Google Sheets, choose a stable unique key (such as an order ID). Search for it first: update the matching row when found, append only when it is missing. For concurrent runs, use a database constraint or locking—“search then append” alone can still race.
+
+#GoogleSheets #Make #n8n #Automation #DataSync #WorkflowDesign #OutLawZAutomation
