@@ -1,65 +1,74 @@
 {
   "automation": "OutLawZ Morning Post",
   "lastRun": {
-    "runId": "2026-11-20-morning-n8n-retry-vs-error-workflow",
-    "startedAt": "2026-11-20T08:39:35+05:00",
-    "finishedAt": "2026-11-20T08:41:32+05:00",
+    "runId": "2026-11-21-morning-google-sheets-idempotent-sync",
+    "startedAt": "2026-11-21T08:15:37+05:00",
+    "finishedAt": "2026-11-21T08:20:13+05:00",
     "status": "blocked",
-    "topic": "n8n Retry vs Error Workflow — transient failures and recovery",
-    "caption": "In n8n, retries and error workflows solve different problems.\n\nUse node-level retries for temporary failures—like a short API timeout. If an execution still fails, a configured Error Workflow can run a separate path for logging, notifications, and recovery actions.\n\nRetries are not a recovery plan. Set sensible limits and make the next action clear.\n\n#n8n #WorkflowAutomation #ErrorHandling #Automation #DeveloperTips #OutLawZAutomation",
+    "summary": "Generated a fresh Google Sheets duplicate-control image and caption. Caption was committed and verified on GitHub; PNG binary upload was not completed, so Metricool scheduling was stopped.",
+    "topic": "Google Sheets — idempotent sync to prevent duplicate rows",
+    "caption": "Automation runs can repeat—webhooks retry, schedules fire again, or a timeout happens after a row was written.\n\nTo prevent duplicate records in Google Sheets, choose a stable unique key (such as an order ID). Search for it first: update the matching row when found, append only when it is missing. For concurrent runs, use a database constraint or locking—“search then append” alone can still race.\n\n#GoogleSheets #Make #n8n #Automation #DataSync #WorkflowDesign #OutLawZAutomation",
     "imagePath": "",
-    "localImagePath": "/mnt/data/OutLawZ-n8n-Retry-vs-Error-Workflow.png",
-    "captionPath": "assets/2026-11-20/morning/n8n-retry-vs-error-workflow-caption.txt",
-    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/73ec9eb57f04fb6d3fbec415a95c063863bec843",
+    "localImagePath": "/mnt/data/OutLawZ-Google-Sheets-Idempotent-Sync-Original.png",
+    "optimizedLocalImagePath": "/mnt/data/OutLawZ-Google-Sheets-Idempotent-Sync.png",
+    "captionPath": "assets/2026-11-21/morning/google-sheets-idempotent-sync-caption.txt",
+    "githubCommitUrl": "https://github.com/0utLawzz/OutLawz-FB-Automation/commit/75abf1a3ddd2ddaf6ab05468dedfa3eaabbfe50f",
     "metricoolPostId": null,
     "scheduledAt": null,
-    "targetScheduledAt": "2026-11-21T08:00:00+05:00",
+    "targetScheduledAt": "2026-11-22T08:00:00+05:00",
     "provider": null,
     "targetProvider": "Facebook",
     "steps": [
       {
-        "name": "Inspect recent assets and captions",
+        "name": "Inspect recent assets, captions, and run records",
         "status": "completed",
-        "timestamp": "2026-11-20T08:39:35+05:00",
-        "details": "Latest available pathlib run and caption inspected; directory listing of all older assets could not be retrieved."
+        "timestamp": "2026-11-21T08:15:37+05:00",
+        "details": "Reviewed current repository tree, latest pathlib and n8n captions/runs, and historical Vercel topic; selected a new Google Sheets duplicate-control topic."
       },
       {
         "name": "Generate original PNG",
         "status": "completed",
-        "timestamp": "2026-11-20T08:39:35+05:00"
+        "timestamp": "2026-11-21T08:16:30+05:00",
+        "details": "Generated original high-resolution artwork; optimized local PNG also created for transfer."
       },
       {
         "name": "Create caption TXT",
         "status": "completed",
-        "timestamp": "2026-11-20T08:39:35+05:00"
+        "timestamp": "2026-11-21T08:18:00+05:00",
+        "details": "Caption saved locally as UTF-8."
       },
       {
-        "name": "GitHub caption commit",
+        "name": "Commit caption to GitHub",
         "status": "completed",
-        "timestamp": "2026-11-20T08:41:32+05:00",
-        "details": "Caption committed: assets/2026-11-20/morning/n8n-retry-vs-error-workflow-caption.txt"
+        "timestamp": "2026-11-21T08:19:39+05:00",
+        "details": "Caption committed and exact path fetched back for verification."
       },
       {
         "name": "GitHub PNG upload/commit",
         "status": "blocked",
-        "timestamp": "2026-11-20T08:41:32+05:00"
+        "timestamp": "2026-11-21T08:20:13+05:00",
+        "details": "Direct local-file transfer to the GitHub connector is unavailable; binary upload was not completed. Desktop Commander devices are offline."
       },
       {
         "name": "Metricool scheduling",
-        "status": "blocked",
-        "timestamp": "2026-11-20T08:41:32+05:00",
-        "details": "Stopped because PNG could not be committed and a public raw media URL is unavailable."
+        "status": "not_started",
+        "timestamp": "2026-11-21T08:20:13+05:00",
+        "details": "Stopped per workflow because no committed PNG/raw media URL is available."
       },
       {
         "name": "Metricool verification",
         "status": "not_started",
-        "timestamp": "2026-11-20T08:41:32+05:00"
+        "timestamp": "2026-11-21T08:20:13+05:00"
+      },
+      {
+        "name": "Update dashboard and append run record",
+        "status": "pending",
+        "timestamp": "2026-11-21T08:20:13+05:00"
       }
     ],
     "errors": [
-      "GitHub binary PNG upload could not be completed with the available connector/file handoff. The Desktop Commander device is offline, so the local generated PNG cannot be transferred to GitHub in this run. Dropbox was not used. Metricool scheduling and verification were stopped because a committed public image URL is unavailable."
-    ],
-    "summary": "Generated an original n8n retry vs error-workflow image and caption. Caption committed to GitHub; PNG binary upload was blocked because the connected file-transfer device is offline and the GitHub connector cannot transfer the local PNG directly. Metricool scheduling stopped."
+      "GitHub PNG binary upload blocked: local-file transfer is unavailable in this session. The GitHub connector can create text files, but no PNG upload was completed; the binary base64 handoff was not attempted. Dropbox was not used. Metricool scheduling and verification were stopped."
+    ]
   },
   "history": [
     {
@@ -97,9 +106,18 @@
       "errors": [
         "GitHub binary PNG upload could not be completed with the available connector/file handoff. The Desktop Commander device is offline, so the local generated PNG cannot be transferred to GitHub in this run. Dropbox was not used. Metricool scheduling and verification were stopped because a committed public image URL is unavailable."
       ]
+    },
+    {
+      "runId": "2026-11-21-morning-google-sheets-idempotent-sync",
+      "status": "blocked",
+      "summary": "Generated a fresh Google Sheets duplicate-control image and caption. Caption was committed and verified on GitHub; PNG binary upload was not completed, so Metricool scheduling was stopped.",
+      "topic": "Google Sheets — idempotent sync to prevent duplicate rows",
+      "errors": [
+        "GitHub PNG binary upload blocked: local-file transfer is unavailable in this session. The GitHub connector can create text files, but no PNG upload was completed; the binary base64 handoff was not attempted. Dropbox was not used. Metricool scheduling and verification were stopped."
+      ]
     }
   ],
-  "nextRunAt": "2026-11-21T08:00:00+05:00",
+  "nextRunAt": "2026-11-22T08:00:00+05:00",
   "timezone": "Asia/Karachi",
   "plannedSchedule": "Daily, flexible morning target around 08:00 PKT; existing automation enabled",
   "rules": {
