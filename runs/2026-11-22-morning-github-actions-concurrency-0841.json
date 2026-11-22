@@ -1,0 +1,71 @@
+{
+  "runId": "2026-11-22-morning-github-actions-concurrency-0841",
+  "startedAt": "2026-11-22T08:41:22+05:00",
+  "finishedAt": "2026-11-22T08:46:36+05:00",
+  "status": "blocked",
+  "topic": "GitHub Actions concurrency — prevent overlapping workflow runs",
+  "caption": "Two workflow runs can start close together and collide when they share a deployment or resource.\n\nGitHub Actions `concurrency` groups let you control overlap. Use a stable group key (for example, workflow + branch). For replaceable checks, `cancel-in-progress: true` can stop an older run; for work that must finish, leave cancellation off. Keep in mind that concurrency groups retain only one pending run, so newer pending runs can replace older ones.\n\n\nProtect shared resources and make your workflow behavior intentional.\n\n#GitHubActions #CI #DevOps #WorkflowAutomation #Automation #OutLawZAutomation",
+  "imagePath": "",
+  "localImagePath": "/mnt/data/a_high_contrast_tech_style_youtube_thumbnail_graph.png",
+  "optimizedLocalImagePath": "/mnt/data/OutLawZ-GitHub-Actions-Concurrency-Palette.png",
+  "captionPath": "assets/2026-11-23/morning/github-actions-concurrency-caption.txt",
+  "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/8df78ee4a87c429c93f3e772e2f8bed1ebe907f2",
+  "metricoolPostId": null,
+  "scheduledAt": null,
+  "targetScheduledAt": "2026-11-23T08:00:00+05:00",
+  "provider": null,
+  "targetProvider": "Facebook",
+  "nextRunAt": "2026-11-24T08:00:00+05:00",
+  "steps": [
+    {
+      "name": "Inspect recent assets, captions, and run records",
+      "status": "completed",
+      "timestamp": "2026-11-22T08:41:22+05:00",
+      "details": "Checked recent pathlib, n8n, and Google Sheets topics/captions/run records. Metricool showed no posts scheduled for 23–24 November."
+    },
+    {
+      "name": "Generate original PNG",
+      "status": "completed",
+      "timestamp": "2026-11-22T08:41:22+05:00",
+      "details": "Generated a new GitHub Actions concurrency poster and created a local optimized PNG derivative. Original generated image is preserved."
+    },
+    {
+      "name": "Create caption TXT",
+      "status": "completed",
+      "timestamp": "2026-11-22T08:41:22+05:00",
+      "details": "Saved the caption locally as UTF-8."
+    },
+    {
+      "name": "Commit caption to GitHub",
+      "status": "completed",
+      "timestamp": "2026-11-22T08:46:36+05:00",
+      "details": "Committed and fetched back the caption at the exact repository path."
+    },
+    {
+      "name": "GitHub PNG binary upload/commit",
+      "status": "blocked",
+      "timestamp": "2026-11-22T08:46:36+05:00",
+      "details": "The GitHub connector requires base64 content for create_blob; the functions runtime cannot read local files, and all Desktop Commander devices are offline. PNG was not committed."
+    },
+    {
+      "name": "Metricool scheduling",
+      "status": "not_started",
+      "timestamp": "2026-11-22T08:46:36+05:00",
+      "details": "Stopped because the committed PNG/raw GitHub media URL is unavailable. No text-only fallback."
+    },
+    {
+      "name": "Metricool verification",
+      "status": "not_started",
+      "timestamp": "2026-11-22T08:46:36+05:00",
+      "details": "No post was scheduled; nothing to verify."
+    },
+    {
+      "name": "Update dashboard and append run record",
+      "status": "pending",
+      "timestamp": "2026-11-22T08:46:36+05:00"
+    }
+  ],
+  "errors": [
+    "GitHub PNG binary transfer blocked: create_blob requires base64 content, but the runtime cannot access the local file directly; Desktop Commander devices are offline. Dropbox was not used. Metricool scheduling and verification were stopped."
+  ]
+}
