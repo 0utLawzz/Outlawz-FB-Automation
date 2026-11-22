@@ -1,0 +1,8 @@
+Two workflow runs can start close together and collide when they share a deployment or resource.
+
+GitHub Actions `concurrency` groups let you control overlap. Use a stable group key (for example, workflow + branch). For replaceable checks, `cancel-in-progress: true` can stop an older run; for work that must finish, leave cancellation off. Keep in mind that concurrency groups retain only one pending run, so newer pending runs can replace older ones.
+
+
+Protect shared resources and make your workflow behavior intentional.
+
+#GitHubActions #CI #DevOps #WorkflowAutomation #Automation #OutLawZAutomation
