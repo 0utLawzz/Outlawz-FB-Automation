@@ -1,73 +1,76 @@
 {
   "automation": "OutLawZ Morning Post",
   "lastRun": {
-    "runId": "2026-11-21-morning-google-sheets-idempotent-sync",
-    "startedAt": "2026-11-21T08:15:37+05:00",
-    "finishedAt": "2026-11-21T08:20:13+05:00",
+    "runId": "2026-11-22-morning-github-actions-concurrency-0841",
+    "startedAt": "2026-11-22T08:41:22+05:00",
+    "finishedAt": "2026-11-22T08:46:36+05:00",
     "status": "blocked",
-    "summary": "Generated a fresh Google Sheets duplicate-control image and caption. Caption was committed and verified on GitHub; PNG binary upload was not completed, so Metricool scheduling was stopped.",
-    "topic": "Google Sheets — idempotent sync to prevent duplicate rows",
-    "caption": "Automation runs can repeat—webhooks retry, schedules fire again, or a timeout happens after a row was written.\n\nTo prevent duplicate records in Google Sheets, choose a stable unique key (such as an order ID). Search for it first: update the matching row when found, append only when it is missing. For concurrent runs, use a database constraint or locking—“search then append” alone can still race.\n\n#GoogleSheets #Make #n8n #Automation #DataSync #WorkflowDesign #OutLawZAutomation",
+    "summary": "Created original GitHub Actions concurrency artwork and caption; caption committed and verified. PNG binary transfer could not be completed, so Metricool scheduling was stopped.",
+    "topic": "GitHub Actions concurrency — prevent overlapping workflow runs",
+    "caption": "Two workflow runs can start close together and collide when they share a deployment or resource.\n\nGitHub Actions `concurrency` groups let you control overlap. Use a stable group key (for example, workflow + branch). For replaceable checks, `cancel-in-progress: true` can stop an older run; for work that must finish, leave cancellation off. Keep in mind that concurrency groups retain only one pending run, so newer pending runs can replace older ones.\n\n\nProtect shared resources and make your workflow behavior intentional.\n\n#GitHubActions #CI #DevOps #WorkflowAutomation #Automation #OutLawZAutomation",
     "imagePath": "",
-    "localImagePath": "/mnt/data/OutLawZ-Google-Sheets-Idempotent-Sync-Original.png",
-    "optimizedLocalImagePath": "/mnt/data/OutLawZ-Google-Sheets-Idempotent-Sync.png",
-    "captionPath": "assets/2026-11-21/morning/google-sheets-idempotent-sync-caption.txt",
-    "githubCommitUrl": "https://github.com/0utLawzz/OutLawz-FB-Automation/commit/75abf1a3ddd2ddaf6ab05468dedfa3eaabbfe50f",
+    "localImagePath": "/mnt/data/a_high_contrast_tech_style_youtube_thumbnail_graph.png",
+    "optimizedLocalImagePath": "/mnt/data/OutLawZ-GitHub-Actions-Concurrency-Palette.png",
+    "captionPath": "assets/2026-11-23/morning/github-actions-concurrency-caption.txt",
+    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/8df78ee4a87c429c93f3e772e2f8bed1ebe907f2",
     "metricoolPostId": null,
     "scheduledAt": null,
-    "targetScheduledAt": "2026-11-22T08:00:00+05:00",
+    "targetScheduledAt": "2026-11-23T08:00:00+05:00",
     "provider": null,
     "targetProvider": "Facebook",
+    "nextRunAt": "2026-11-24T08:00:00+05:00",
     "steps": [
       {
         "name": "Inspect recent assets, captions, and run records",
         "status": "completed",
-        "timestamp": "2026-11-21T08:15:37+05:00",
-        "details": "Reviewed current repository tree, latest pathlib and n8n captions/runs, and historical Vercel topic; selected a new Google Sheets duplicate-control topic."
+        "timestamp": "2026-11-22T08:41:22+05:00",
+        "details": "Checked recent pathlib, n8n, and Google Sheets topics/captions/run records. Metricool showed no posts scheduled for 23–24 November."
       },
       {
         "name": "Generate original PNG",
         "status": "completed",
-        "timestamp": "2026-11-21T08:16:30+05:00",
-        "details": "Generated original high-resolution artwork; optimized local PNG also created for transfer."
+        "timestamp": "2026-11-22T08:41:22+05:00",
+        "details": "Generated a new GitHub Actions concurrency poster and created a local optimized PNG derivative. Original generated image is preserved."
       },
       {
         "name": "Create caption TXT",
         "status": "completed",
-        "timestamp": "2026-11-21T08:18:00+05:00",
-        "details": "Caption saved locally as UTF-8."
+        "timestamp": "2026-11-22T08:41:22+05:00",
+        "details": "Saved the caption locally as UTF-8."
       },
       {
         "name": "Commit caption to GitHub",
         "status": "completed",
-        "timestamp": "2026-11-21T08:19:39+05:00",
-        "details": "Caption committed and exact path fetched back for verification."
+        "timestamp": "2026-11-22T08:46:36+05:00",
+        "details": "Committed and fetched back the caption at the exact repository path."
       },
       {
-        "name": "GitHub PNG upload/commit",
+        "name": "GitHub PNG binary upload/commit",
         "status": "blocked",
-        "timestamp": "2026-11-21T08:20:13+05:00",
-        "details": "Direct local-file transfer to the GitHub connector is unavailable; binary upload was not completed. Desktop Commander devices are offline."
+        "timestamp": "2026-11-22T08:46:36+05:00",
+        "details": "The GitHub connector requires base64 content for create_blob; the functions runtime cannot access local files, and all Desktop Commander devices are offline. PNG was not committed."
       },
       {
         "name": "Metricool scheduling",
         "status": "not_started",
-        "timestamp": "2026-11-21T08:20:13+05:00",
-        "details": "Stopped per workflow because no committed PNG/raw media URL is available."
+        "timestamp": "2026-11-22T08:46:36+05:00",
+        "details": "Stopped because the committed PNG/raw GitHub media URL is unavailable. No text-only fallback."
       },
       {
         "name": "Metricool verification",
         "status": "not_started",
-        "timestamp": "2026-11-21T08:20:13+05:00"
+        "timestamp": "2026-11-22T08:46:36+05:00",
+        "details": "No post was scheduled; nothing to verify."
       },
       {
         "name": "Update dashboard and append run record",
-        "status": "pending",
-        "timestamp": "2026-11-21T08:20:13+05:00"
+        "status": "completed",
+        "timestamp": "2026-11-22T08:46:36+05:00",
+        "details": "Run record was appended and verified; dashboard update is this commit."
       }
     ],
     "errors": [
-      "GitHub PNG binary upload blocked: local-file transfer is unavailable in this session. The GitHub connector can create text files, but no PNG upload was completed; the binary base64 handoff was not attempted. Dropbox was not used. Metricool scheduling and verification were stopped."
+      "GitHub PNG binary transfer blocked: create_blob requires base64 content, but the runtime cannot access the local file directly; Desktop Commander devices are offline. Dropbox was not used. Metricool scheduling and verification were stopped."
     ]
   },
   "history": [
@@ -115,9 +118,18 @@
       "errors": [
         "GitHub PNG binary upload blocked: local-file transfer is unavailable in this session. The GitHub connector can create text files, but no PNG upload was completed; the binary base64 handoff was not attempted. Dropbox was not used. Metricool scheduling and verification were stopped."
       ]
+    },
+    {
+      "runId": "2026-11-22-morning-github-actions-concurrency-0841",
+      "status": "blocked",
+      "summary": "Created original GitHub Actions concurrency artwork and caption; caption committed and verified. PNG binary transfer could not be completed, so Metricool scheduling was stopped.",
+      "topic": "GitHub Actions concurrency — prevent overlapping workflow runs",
+      "errors": [
+        "GitHub PNG binary transfer blocked: create_blob requires base64 content, but the runtime cannot access the local file directly; Desktop Commander devices are offline. Dropbox was not used. Metricool scheduling and verification were stopped."
+      ]
     }
   ],
-  "nextRunAt": "2026-11-22T08:00:00+05:00",
+  "nextRunAt": "2026-11-24T08:00:00+05:00",
   "timezone": "Asia/Karachi",
   "plannedSchedule": "Daily, flexible morning target around 08:00 PKT; existing automation enabled",
   "rules": {
