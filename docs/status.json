@@ -1,76 +1,76 @@
 {
   "automation": "OutLawZ Morning Post",
   "lastRun": {
-    "runId": "2026-11-22-morning-github-actions-concurrency-0841",
-    "startedAt": "2026-11-22T08:41:22+05:00",
-    "finishedAt": "2026-11-22T08:46:36+05:00",
+    "runId": "2026-11-23-morning-mcp-least-privilege-0843",
+    "startedAt": "2026-11-23T08:41:53+05:00",
+    "finishedAt": "2026-11-23T08:43:21+05:00",
     "status": "blocked",
-    "summary": "Created original GitHub Actions concurrency artwork and caption; caption committed and verified. PNG binary transfer could not be completed, so Metricool scheduling was stopped.",
-    "topic": "GitHub Actions concurrency — prevent overlapping workflow runs",
-    "caption": "Two workflow runs can start close together and collide when they share a deployment or resource.\n\nGitHub Actions `concurrency` groups let you control overlap. Use a stable group key (for example, workflow + branch). For replaceable checks, `cancel-in-progress: true` can stop an older run; for work that must finish, leave cancellation off. Keep in mind that concurrency groups retain only one pending run, so newer pending runs can replace older ones.\n\n\nProtect shared resources and make your workflow behavior intentional.\n\n#GitHubActions #CI #DevOps #WorkflowAutomation #Automation #OutLawZAutomation",
-    "imagePath": "",
-    "localImagePath": "/mnt/data/a_high_contrast_tech_style_youtube_thumbnail_graph.png",
-    "optimizedLocalImagePath": "/mnt/data/OutLawZ-GitHub-Actions-Concurrency-Palette.png",
-    "captionPath": "assets/2026-11-23/morning/github-actions-concurrency-caption.txt",
-    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/8df78ee4a87c429c93f3e772e2f8bed1ebe907f2",
+    "summary": "Generated original MCP least-privilege artwork and caption. Caption committed and verified; PNG binary upload blocked, so Metricool scheduling stopped.",
+    "topic": "MCP tool access — least privilege for read, write, and admin actions",
+    "caption": "MCP tools should not all have the same level of access.\n\nStart with read-only tools for search and inspection. Grant write tools only when a task needs them, and use the host/client’s approval controls for sensitive actions when available. Keep critical administrative actions restricted.\n\nLeast privilege reduces the impact of mistakes and makes agent workflows easier to review.\n\n#MCP #AIAgents #Automation #Security #LeastPrivilege #DeveloperTools #OutLawZAutomation\n",
+    "imagePath": "assets/2026-11-24/morning/mcp-least-privilege.png",
+    "localImagePath": "/mnt/data/OutLawZ-MCP-Least-Privilege.png",
+    "captionPath": "assets/2026-11-24/morning/mcp-least-privilege-caption.txt",
+    "githubCaptionCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/e36aa06a88ca9934c1f72a6c9e09eb23a6b4bed7",
+    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/e36aa06a88ca9934c1f72a6c9e09eb23a6b4bed7",
     "metricoolPostId": null,
     "scheduledAt": null,
-    "targetScheduledAt": "2026-11-23T08:00:00+05:00",
+    "targetScheduledAt": "2026-11-24T08:00:00+05:00",
     "provider": null,
     "targetProvider": "Facebook",
-    "nextRunAt": "2026-11-24T08:00:00+05:00",
+    "nextRunAt": "2026-11-25T08:00:00+05:00",
     "steps": [
       {
-        "name": "Inspect recent assets, captions, and run records",
+        "name": "Inspect recent GitHub assets, captions, and run records",
         "status": "completed",
-        "timestamp": "2026-11-22T08:41:22+05:00",
-        "details": "Checked recent pathlib, n8n, and Google Sheets topics/captions/run records. Metricool showed no posts scheduled for 23–24 November."
+        "timestamp": "2026-11-23T08:41:53+05:00",
+        "details": "Inspected repository tree, docs/status.json, recent captions and run record. Recent topics: Python pathlib, n8n retry/error workflow, Google Sheets duplicate control, GitHub Actions concurrency. Metricool returned no scheduled posts for Nov 24."
       },
       {
         "name": "Generate original PNG",
         "status": "completed",
-        "timestamp": "2026-11-22T08:41:22+05:00",
-        "details": "Generated a new GitHub Actions concurrency poster and created a local optimized PNG derivative. Original generated image is preserved."
+        "timestamp": "2026-11-23T08:42:30+05:00",
+        "details": "Generated fresh 1024x1024 MCP least-privilege poster and preserved optimized PNG locally (555811 bytes)."
       },
       {
         "name": "Create caption TXT",
         "status": "completed",
-        "timestamp": "2026-11-22T08:41:22+05:00",
-        "details": "Saved the caption locally as UTF-8."
+        "timestamp": "2026-11-23T08:42:40+05:00",
+        "details": "Created UTF-8 caption locally."
       },
       {
-        "name": "Commit caption to GitHub",
+        "name": "Commit caption TXT to GitHub",
         "status": "completed",
-        "timestamp": "2026-11-22T08:46:36+05:00",
-        "details": "Committed and fetched back the caption at the exact repository path."
+        "timestamp": "2026-11-23T08:43:06+05:00",
+        "details": "Committed exact caption at assets/2026-11-24/morning/mcp-least-privilege-caption.txt; fetched back and verified content. Commit SHA e36aa06a88ca9934c1f72a6c9e09eb23a6b4bed7."
       },
       {
-        "name": "GitHub PNG binary upload/commit",
+        "name": "Commit PNG binary to GitHub",
         "status": "blocked",
-        "timestamp": "2026-11-22T08:46:36+05:00",
-        "details": "The GitHub connector requires base64 content for create_blob; the functions runtime cannot access local files, and all Desktop Commander devices are offline. PNG was not committed."
+        "timestamp": "2026-11-23T08:43:21+05:00",
+        "details": "GitHub create_blob requires base64 content, but the functions runtime cannot access the local image file to transfer it. Desktop Commander devices are offline. No binary upload completed."
       },
       {
         "name": "Metricool scheduling",
         "status": "not_started",
-        "timestamp": "2026-11-22T08:46:36+05:00",
-        "details": "Stopped because the committed PNG/raw GitHub media URL is unavailable. No text-only fallback."
+        "timestamp": "2026-11-23T08:43:21+05:00",
+        "details": "Stopped at the binary upload failure. No text-only fallback; no post created."
       },
       {
-        "name": "Metricool verification",
+        "name": "Metricool scheduled-post verification",
         "status": "not_started",
-        "timestamp": "2026-11-22T08:46:36+05:00",
-        "details": "No post was scheduled; nothing to verify."
+        "timestamp": "2026-11-23T08:43:21+05:00",
+        "details": "Nothing scheduled, so verification was not applicable."
       },
       {
         "name": "Update dashboard and append run record",
-        "status": "completed",
-        "timestamp": "2026-11-22T08:46:36+05:00",
-        "details": "Run record was appended and verified; dashboard update is this commit."
+        "status": "pending",
+        "timestamp": "2026-11-23T08:43:21+05:00",
+        "details": "Run record and docs/status.json update are being written after the blocked run."
       }
     ],
     "errors": [
-      "GitHub PNG binary transfer blocked: create_blob requires base64 content, but the runtime cannot access the local file directly; Desktop Commander devices are offline. Dropbox was not used. Metricool scheduling and verification were stopped."
+      "GitHub PNG binary upload blocked: available GitHub connector methods accept text or base64, but the local PNG cannot be read by the functions runtime; Desktop Commander devices are offline. Dropbox was not used. Metricool scheduling and verification stopped."
     ]
   },
   "history": [
@@ -127,11 +127,20 @@
       "errors": [
         "GitHub PNG binary transfer blocked: create_blob requires base64 content, but the runtime cannot access the local file directly; Desktop Commander devices are offline. Dropbox was not used. Metricool scheduling and verification were stopped."
       ]
+    },
+    {
+      "runId": "2026-11-23-morning-mcp-least-privilege-0843",
+      "status": "blocked",
+      "summary": "Generated original MCP least-privilege artwork and caption. Caption committed and verified; PNG binary upload blocked, so Metricool scheduling stopped.",
+      "topic": "MCP tool access — least privilege for read, write, and admin actions",
+      "errors": [
+        "GitHub PNG binary upload blocked: available GitHub connector methods accept text or base64, but the local PNG cannot be read by the functions runtime; Desktop Commander devices are offline. Dropbox was not used. Metricool scheduling and verification stopped."
+      ]
     }
   ],
-  "nextRunAt": "2026-11-24T08:00:00+05:00",
+  "nextRunAt": "2026-11-25T08:00:00+05:00",
   "timezone": "Asia/Karachi",
-  "plannedSchedule": "Daily, flexible morning target around 08:00 PKT; existing automation enabled",
+  "plannedSchedule": "Daily, flexible morning target around 08:00 PKT; existing automation schedule unchanged",
   "rules": {
     "brandId": 7508377,
     "provider": "Facebook",
