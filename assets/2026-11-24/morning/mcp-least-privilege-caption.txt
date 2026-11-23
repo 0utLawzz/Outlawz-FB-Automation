@@ -1,0 +1,7 @@
+MCP tools should not all have the same level of access.
+
+Start with read-only tools for search and inspection. Grant write tools only when a task needs them, and use the host/client’s approval controls for sensitive actions when available. Keep critical administrative actions restricted.
+
+Least privilege reduces the impact of mistakes and makes agent workflows easier to review.
+
+#MCP #AIAgents #Automation #Security #LeastPrivilege #DeveloperTools #OutLawZAutomation
