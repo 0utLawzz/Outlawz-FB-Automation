@@ -1,77 +1,74 @@
 {
   "automation": "OutLawZ Morning Post",
   "lastRun": {
-    "runId": "2026-11-23-morning-mcp-least-privilege-0843",
-    "startedAt": "2026-11-23T08:41:53+05:00",
-    "finishedAt": "2026-11-23T08:43:21+05:00",
-    "status": "blocked",
-    "summary": "Generated original MCP least-privilege artwork and caption. Caption committed and verified; PNG binary upload blocked, so Metricool scheduling stopped.",
-    "topic": "MCP tool access — least privilege for read, write, and admin actions",
-    "caption": "MCP tools should not all have the same level of access.\n\nStart with read-only tools for search and inspection. Grant write tools only when a task needs them, and use the host/client’s approval controls for sensitive actions when available. Keep critical administrative actions restricted.\n\nLeast privilege reduces the impact of mistakes and makes agent workflows easier to review.\n\n#MCP #AIAgents #Automation #Security #LeastPrivilege #DeveloperTools #OutLawZAutomation\n",
-    "imagePath": "assets/2026-11-24/morning/mcp-least-privilege.png",
-    "localImagePath": "/mnt/data/OutLawZ-MCP-Least-Privilege.png",
-    "captionPath": "assets/2026-11-24/morning/mcp-least-privilege-caption.txt",
-    "githubCaptionCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/e36aa06a88ca9934c1f72a6c9e09eb23a6b4bed7",
-    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/e36aa06a88ca9934c1f72a6c9e09eb23a6b4bed7",
-    "metricoolPostId": null,
-    "scheduledAt": null,
-    "targetScheduledAt": "2026-11-24T08:00:00+05:00",
-    "provider": null,
-    "targetProvider": "Facebook",
+    "runId": "2026-11-24-morning-vercel-env-scopes-0852",
+    "startedAt": "2026-11-24T08:42:46+05:00",
+    "finishedAt": "2026-11-24T08:52:25+05:00",
+    "status": "success",
+    "summary": "Generated original Vercel environment-scope artwork and caption, committed both assets to GitHub, scheduled exactly one Facebook post in Metricool for 25 November 2026 at 08:00 PKT, and verified the exact caption, media, provider, and time.",
+    "topic": "Vercel environment variables — separate Development, Preview, and Production scopes",
+    "caption": "Vercel gives you separate Development, Preview, and Production environments. Keep API endpoints and credentials aligned with the environment you're testing instead of sharing one set of values everywhere.\n\nOne detail that is easy to miss: environment-variable changes apply to new deployments, not existing ones. After updating a value, redeploy so the new deployment picks it up.\n\nKeep secrets server-side. Expose a value to the browser only when it is intentionally public.\n\n#Vercel #DevOps #EnvironmentVariables #Deployment #WebDevelopment #Automation #OutLawZAutomation\n",
+    "imagePath": "assets/2026-11-24/morning/vercel-environment-scopes.png",
+    "localImagePath": "/mnt/data/OutLawZ-Vercel-Environment-Scopes.png",
+    "captionPath": "assets/2026-11-24/morning/vercel-environment-scopes-caption.txt",
+    "localCaptionPath": "/mnt/data/OutLawZ-Vercel-Environment-Scopes-Caption.txt",
+    "githubPngBlobSha": "131dd198e07fd2e3a5e8689ec65f5a5e82e1e9ec",
+    "githubCaptionBlobSha": "99001403cfb89a72bb798e9ad6691e110a2dc68c",
+    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/70bc27635df0e2137901dedbb509afedd5646ecd",
+    "metricoolPostId": 439770994,
+    "metricoolPostUuid": "2166089021600253016",
+    "metricoolPlannerUrl": "https://app.metricool.com/planner/calendar?blogId=7508377&openWithPostUuid=2166089021600253016",
+    "rawMediaUrl": "https://raw.githubusercontent.com/0utLawzz/Outlawz-FB-Automation/main/assets/2026-11-24/morning/vercel-environment-scopes.png",
+    "metricoolHostedMediaUrl": "https://static.metricool.com/planner/202611/7508377-file-18295446311639982705.png",
+    "scheduledAt": "2026-11-25T08:00:00+05:00",
+    "targetScheduledAt": "2026-11-25T08:00:00+05:00",
+    "provider": "Facebook",
     "nextRunAt": "2026-11-25T08:00:00+05:00",
     "steps": [
       {
         "name": "Inspect recent GitHub assets, captions, and run records",
         "status": "completed",
-        "timestamp": "2026-11-23T08:41:53+05:00",
-        "details": "Inspected repository tree, docs/status.json, recent captions and run record. Recent topics: Python pathlib, n8n retry/error workflow, Google Sheets duplicate control, GitHub Actions concurrency. Metricool returned no scheduled posts for Nov 24."
+        "timestamp": "2026-11-24T08:43:00+05:00",
+        "details": "Inspected recent assets, captions, status, and run records. Recent topics included Python pathlib, n8n retry/error handling, Google Sheets idempotent sync, GitHub Actions concurrency, and MCP least privilege. The target date had no existing Metricool scheduled posts before creation. Selected Vercel Development/Preview/Production environment scopes as a distinct topic."
       },
       {
-        "name": "Generate original PNG",
+        "name": "Generate fresh original PNG",
         "status": "completed",
-        "timestamp": "2026-11-23T08:42:30+05:00",
-        "details": "Generated fresh 1024x1024 MCP least-privilege poster and preserved optimized PNG locally (555811 bytes)."
+        "timestamp": "2026-11-24T08:44:30+05:00",
+        "details": "Created a fresh 1024x1024 OutLawZ dark-tech orange/black/silver poster comparing Development, Preview, and Production scopes. Optimized PNG size: 19,996 bytes."
       },
       {
         "name": "Create caption TXT",
         "status": "completed",
-        "timestamp": "2026-11-23T08:42:40+05:00",
-        "details": "Created UTF-8 caption locally."
+        "timestamp": "2026-11-24T08:45:10+05:00",
+        "details": "Created UTF-8 caption TXT (574 bytes) with practical environment-scope guidance, redeploy note, server-side secret reminder, and relevant hashtags."
       },
       {
-        "name": "Commit caption TXT to GitHub",
+        "name": "Commit PNG and caption to GitHub",
         "status": "completed",
-        "timestamp": "2026-11-23T08:43:06+05:00",
-        "details": "Committed exact caption at assets/2026-11-24/morning/mcp-least-privilege-caption.txt; fetched back and verified content. Commit SHA e36aa06a88ca9934c1f72a6c9e09eb23a6b4bed7."
+        "timestamp": "2026-11-24T08:50:30+05:00",
+        "details": "Committed both exact files to main and verified tree paths and blob SHAs. PNG: assets/2026-11-24/morning/vercel-environment-scopes.png (131dd198e07fd2e3a5e8689ec65f5a5e82e1e9ec). Caption: assets/2026-11-24/morning/vercel-environment-scopes-caption.txt (99001403cfb89a72bb798e9ad6691e110a2dc68c). Commit: 70bc27635df0e2137901dedbb509afedd5646ecd."
       },
       {
-        "name": "Commit PNG binary to GitHub",
-        "status": "blocked",
-        "timestamp": "2026-11-23T08:43:21+05:00",
-        "details": "GitHub create_blob requires base64 content, but the functions runtime cannot access the local image file to transfer it. Desktop Commander devices are offline. No binary upload completed."
+        "name": "Schedule Metricool Facebook post",
+        "status": "completed",
+        "timestamp": "2026-11-24T08:52:00+05:00",
+        "details": "Created exactly one Facebook POST for 2026-11-25 08:00 Asia/Karachi. autoPublish=true, draft=false. Metricool accepted the public raw GitHub PNG URL and imported it into its media store. Post ID 439770994; UUID 2166089021600253016."
       },
       {
-        "name": "Metricool scheduling",
-        "status": "not_started",
-        "timestamp": "2026-11-23T08:43:21+05:00",
-        "details": "Stopped at the binary upload failure. No text-only fallback; no post created."
-      },
-      {
-        "name": "Metricool scheduled-post verification",
-        "status": "not_started",
-        "timestamp": "2026-11-23T08:43:21+05:00",
-        "details": "Nothing scheduled, so verification was not applicable."
+        "name": "Verify Metricool scheduled post",
+        "status": "completed",
+        "timestamp": "2026-11-24T08:52:15+05:00",
+        "details": "Queried scheduled posts for 2026-11-25 and found exactly one matching post. Verified exact caption, one image media asset, Facebook-only provider with PENDING scheduled status, facebookData.type=POST, autoPublish=true, draft=false, and publicationDate 2026-11-25T08:00:00 Asia/Karachi."
       },
       {
         "name": "Update dashboard and append run record",
-        "status": "pending",
-        "timestamp": "2026-11-23T08:43:21+05:00",
-        "details": "Run record and docs/status.json update are being written after the blocked run."
+        "status": "completed",
+        "timestamp": "2026-11-24T08:52:25+05:00",
+        "details": "Updated docs/status.json only after all scheduling verification checks passed; appended this successful run to history and added the complete per-run JSON record."
       }
     ],
-    "errors": [
-      "GitHub PNG binary upload blocked: available GitHub connector methods accept text or base64, but the local PNG cannot be read by the functions runtime; Desktop Commander devices are offline. Dropbox was not used. Metricool scheduling and verification stopped."
-    ]
+    "errors": []
   },
   "history": [
     {
@@ -136,6 +133,17 @@
       "errors": [
         "GitHub PNG binary upload blocked: available GitHub connector methods accept text or base64, but the local PNG cannot be read by the functions runtime; Desktop Commander devices are offline. Dropbox was not used. Metricool scheduling and verification stopped."
       ]
+    },
+    {
+      "runId": "2026-11-24-morning-vercel-env-scopes-0852",
+      "status": "success",
+      "summary": "Generated original Vercel environment-scope artwork and caption, committed both assets to GitHub, scheduled exactly one Facebook post in Metricool for 25 November 2026 at 08:00 PKT, and verified the exact caption, media, provider, and time.",
+      "topic": "Vercel environment variables — separate Development, Preview, and Production scopes",
+      "scheduledAt": "2026-11-25T08:00:00+05:00",
+      "provider": "Facebook",
+      "metricoolPostId": 439770994,
+      "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/70bc27635df0e2137901dedbb509afedd5646ecd",
+      "errors": []
     }
   ],
   "nextRunAt": "2026-11-25T08:00:00+05:00",
