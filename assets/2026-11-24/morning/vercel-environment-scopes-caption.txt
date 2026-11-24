@@ -1,0 +1,7 @@
+Vercel gives you separate Development, Preview, and Production environments. Keep API endpoints and credentials aligned with the environment you're testing instead of sharing one set of values everywhere.
+
+One detail that is easy to miss: environment-variable changes apply to new deployments, not existing ones. After updating a value, redeploy so the new deployment picks it up.
+
+Keep secrets server-side. Expose a value to the browser only when it is intentionally public.
+
+#Vercel #DevOps #EnvironmentVariables #Deployment #WebDevelopment #Automation #OutLawZAutomation
