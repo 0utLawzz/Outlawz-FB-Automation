@@ -1,0 +1,7 @@
+Google Apps Script tip: avoid calling getValue() and setValue() repeatedly inside a loop when processing a large range.
+
+Read the range once with getValues(), transform the 2D array in memory, then write the result with one setValues() call. Fewer Spreadsheet service calls can make bulk jobs significantly faster.
+
+Make sure the output array dimensions match the destination range, and only write the columns you intend to update.
+
+#GoogleAppsScript #GoogleSheets #Automation #JavaScript #WorkflowAutomation #OutLawZAutomation
