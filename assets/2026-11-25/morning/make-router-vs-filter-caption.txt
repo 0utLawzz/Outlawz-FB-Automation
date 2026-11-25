@@ -1,0 +1,7 @@
+Make routers and filters solve different problems.
+
+A router branches bundles into multiple routes. A filter on a route connection lets only bundles that match its conditions continue. Use filters to stop irrelevant bundles before expensive API calls or write operations.
+
+When a scenario needs different outcomes, add clearly defined routes and conditions. If unmatched bundles need handling, configure a fallback route rather than letting them disappear unnoticed.
+
+#Make #MakeAutomation #WorkflowDesign #NoCode #AutomationTips #OutLawZAutomation
