@@ -1,74 +1,80 @@
 {
   "automation": "OutLawZ Morning Post",
   "lastRun": {
-    "runId": "2026-11-24-morning-vercel-env-scopes-0852",
-    "startedAt": "2026-11-24T08:42:46+05:00",
-    "finishedAt": "2026-11-24T08:52:25+05:00",
-    "status": "success",
-    "summary": "Generated original Vercel environment-scope artwork and caption, committed both assets to GitHub, scheduled exactly one Facebook post in Metricool for 25 November 2026 at 08:00 PKT, and verified the exact caption, media, provider, and time.",
-    "topic": "Vercel environment variables — separate Development, Preview, and Production scopes",
-    "caption": "Vercel gives you separate Development, Preview, and Production environments. Keep API endpoints and credentials aligned with the environment you're testing instead of sharing one set of values everywhere.\n\nOne detail that is easy to miss: environment-variable changes apply to new deployments, not existing ones. After updating a value, redeploy so the new deployment picks it up.\n\nKeep secrets server-side. Expose a value to the browser only when it is intentionally public.\n\n#Vercel #DevOps #EnvironmentVariables #Deployment #WebDevelopment #Automation #OutLawZAutomation\n",
-    "imagePath": "assets/2026-11-24/morning/vercel-environment-scopes.png",
-    "localImagePath": "/mnt/data/OutLawZ-Vercel-Environment-Scopes.png",
-    "captionPath": "assets/2026-11-24/morning/vercel-environment-scopes-caption.txt",
-    "localCaptionPath": "/mnt/data/OutLawZ-Vercel-Environment-Scopes-Caption.txt",
-    "githubPngBlobSha": "131dd198e07fd2e3a5e8689ec65f5a5e82e1e9ec",
-    "githubCaptionBlobSha": "99001403cfb89a72bb798e9ad6691e110a2dc68c",
-    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/70bc27635df0e2137901dedbb509afedd5646ecd",
-    "metricoolPostId": 439770994,
-    "metricoolPostUuid": "2166089021600253016",
-    "metricoolPlannerUrl": "https://app.metricool.com/planner/calendar?blogId=7508377&openWithPostUuid=2166089021600253016",
-    "rawMediaUrl": "https://raw.githubusercontent.com/0utLawzz/Outlawz-FB-Automation/main/assets/2026-11-24/morning/vercel-environment-scopes.png",
-    "metricoolHostedMediaUrl": "https://static.metricool.com/planner/202611/7508377-file-18295446311639982705.png",
-    "scheduledAt": "2026-11-25T08:00:00+05:00",
-    "targetScheduledAt": "2026-11-25T08:00:00+05:00",
-    "provider": "Facebook",
-    "nextRunAt": "2026-11-25T08:00:00+05:00",
+    "runId": "2026-11-25-morning-apps-script-batch-operations-0914",
+    "startedAt": "2026-11-25T09:08:35+05:00",
+    "finishedAt": "2026-11-25T09:14:50+05:00",
+    "status": "blocked",
+    "summary": "Generated original Google Apps Script batch-operations artwork and caption. Caption was committed and verified on GitHub; PNG remains preserved locally because the current connector session could not hand the local binary file to GitHub create_blob. Metricool scheduling was stopped; no post was created.",
+    "topic": "Google Apps Script — batch reads and writes with getValues() and setValues()",
+    "caption": "Google Apps Script tip: avoid calling getValue() and setValue() repeatedly inside a loop when processing a large range.\n\nRead the range once with getValues(), transform the 2D array in memory, then write the result with one setValues() call. Fewer Spreadsheet service calls can make bulk jobs significantly faster.\n\nMake sure the output array dimensions match the destination range, and only write the columns you intend to update.\n\n#GoogleAppsScript #GoogleSheets #Automation #JavaScript #WorkflowAutomation #OutLawZAutomation\n",
+    "imagePath": "assets/2026-11-25/morning/google-apps-script-batch-operations.png",
+    "localImagePath": "/mnt/data/outlawz-apps-script-batch-operations.png",
+    "originalGeneratedImagePath": "/mnt/data/a_high_contrast_tech_tutorial_marketing_graphic_in.png",
+    "captionPath": "assets/2026-11-25/morning/google-apps-script-batch-operations-caption.txt",
+    "localCaptionPath": "/mnt/data/outlawz-apps-script-batch-operations-caption.txt",
+    "githubPngBlobSha": null,
+    "githubCaptionBlobSha": "f10529f42fb2b46b8f2be65e1bc5a84ecccb15d4",
+    "githubCaptionCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0f41110249a3c42e803547053430772b85d0fcad",
+    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0f41110249a3c42e803547053430772b85d0fcad",
+    "commitScope": "caption-only; PNG not committed",
+    "rawMediaUrl": null,
+    "metricoolPostId": null,
+    "metricoolPostUuid": null,
+    "metricoolPlannerUrl": null,
+    "metricoolHostedMediaUrl": null,
+    "scheduledAt": null,
+    "targetScheduledAt": "2026-11-26T08:00:00+05:00",
+    "provider": null,
+    "targetProvider": "Facebook",
+    "nextRunAt": "2026-11-26T08:00:00+05:00",
     "steps": [
       {
         "name": "Inspect recent GitHub assets, captions, and run records",
         "status": "completed",
-        "timestamp": "2026-11-24T08:43:00+05:00",
-        "details": "Inspected recent assets, captions, status, and run records. Recent topics included Python pathlib, n8n retry/error handling, Google Sheets idempotent sync, GitHub Actions concurrency, and MCP least privilege. The target date had no existing Metricool scheduled posts before creation. Selected Vercel Development/Preview/Production environment scopes as a distinct topic."
+        "timestamp": "2026-11-25T09:14:50+05:00",
+        "details": "Inspected repository tree, recent captions, recent run records, and docs/status.json. Recent topics included Python pathlib, n8n retry/error handling, Google Sheets idempotent sync, GitHub Actions concurrency, MCP least privilege, Vercel environment scopes, and Make routers versus filters. Selected Apps Script batch reads/writes as a distinct practical topic."
       },
       {
         "name": "Generate fresh original PNG",
         "status": "completed",
-        "timestamp": "2026-11-24T08:44:30+05:00",
-        "details": "Created a fresh 1024x1024 OutLawZ dark-tech orange/black/silver poster comparing Development, Preview, and Production scopes. Optimized PNG size: 19,996 bytes."
+        "timestamp": "2026-11-25T09:14:50+05:00",
+        "details": "Generated a fresh OutLawZ dark-tech orange/black/silver graphic explaining the getValues() → in-memory processing → setValues() pattern. Preserved the original generated PNG and an optimized 512×512 PNG locally."
       },
       {
         "name": "Create caption TXT",
         "status": "completed",
-        "timestamp": "2026-11-24T08:45:10+05:00",
-        "details": "Created UTF-8 caption TXT (574 bytes) with practical environment-scope guidance, redeploy note, server-side secret reminder, and relevant hashtags."
+        "timestamp": "2026-11-25T09:14:50+05:00",
+        "details": "Created UTF-8 caption with accurate Apps Script batch-operation guidance and relevant hashtags."
       },
       {
         "name": "Commit PNG and caption to GitHub",
-        "status": "completed",
-        "timestamp": "2026-11-24T08:50:30+05:00",
-        "details": "Committed both exact files to main and verified tree paths and blob SHAs. PNG: assets/2026-11-24/morning/vercel-environment-scopes.png (131dd198e07fd2e3a5e8689ec65f5a5e82e1e9ec). Caption: assets/2026-11-24/morning/vercel-environment-scopes-caption.txt (99001403cfb89a72bb798e9ad6691e110a2dc68c). Commit: 70bc27635df0e2137901dedbb509afedd5646ecd."
+        "status": "blocked",
+        "timestamp": "2026-11-25T09:14:50+05:00",
+        "details": "Caption TXT was committed to main and fetched back for exact-content verification. PNG binary upload was not completed: the current connector session has no direct binary file handoff from the local generated PNG to GitHub create_blob; the connected Desktop Commander devices are offline. The PNG is preserved locally. No Dropbox fallback was used."
       },
       {
         "name": "Schedule Metricool Facebook post",
-        "status": "completed",
-        "timestamp": "2026-11-24T08:52:00+05:00",
-        "details": "Created exactly one Facebook POST for 2026-11-25 08:00 Asia/Karachi. autoPublish=true, draft=false. Metricool accepted the public raw GitHub PNG URL and imported it into its media store. Post ID 439770994; UUID 2166089021600253016."
+        "status": "not_started",
+        "timestamp": "2026-11-25T09:14:50+05:00",
+        "details": "Stopped because the PNG is not committed and no public raw GitHub image URL exists. No Metricool post was created."
       },
       {
         "name": "Verify Metricool scheduled post",
-        "status": "completed",
-        "timestamp": "2026-11-24T08:52:15+05:00",
-        "details": "Queried scheduled posts for 2026-11-25 and found exactly one matching post. Verified exact caption, one image media asset, Facebook-only provider with PENDING scheduled status, facebookData.type=POST, autoPublish=true, draft=false, and publicationDate 2026-11-25T08:00:00 Asia/Karachi."
+        "status": "not_started",
+        "timestamp": "2026-11-25T09:14:50+05:00",
+        "details": "Not applicable because scheduling was not started."
       },
       {
         "name": "Update dashboard and append run record",
         "status": "completed",
-        "timestamp": "2026-11-24T08:52:25+05:00",
-        "details": "Updated docs/status.json only after all scheduling verification checks passed; appended this successful run to history and added the complete per-run JSON record."
+        "timestamp": "2026-11-25T09:14:50+05:00",
+        "details": "Recorded this run as blocked, preserved existing dashboard history, and appended the run record. Dashboard success was not set."
       }
     ],
-    "errors": []
+    "errors": [
+      "GitHub PNG binary upload blocked: the current connector session could not transfer the local PNG bytes into GitHub create_blob; Desktop Commander devices are offline. Caption TXT was committed and verified. No Metricool scheduling or publication occurred."
+    ]
   },
   "history": [
     {
@@ -144,9 +150,22 @@
       "metricoolPostId": 439770994,
       "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/70bc27635df0e2137901dedbb509afedd5646ecd",
       "errors": []
+    },
+    {
+      "runId": "2026-11-25-morning-apps-script-batch-operations-0914",
+      "status": "blocked",
+      "summary": "Generated original Google Apps Script batch-operations artwork and caption. Caption was committed and verified on GitHub; PNG remains preserved locally because the current connector session could not hand the local binary file to GitHub create_blob. Metricool scheduling was stopped; no post was created.",
+      "topic": "Google Apps Script — batch reads and writes with getValues() and setValues()",
+      "scheduledAt": null,
+      "targetScheduledAt": "2026-11-26T08:00:00+05:00",
+      "provider": null,
+      "githubCaptionCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0f41110249a3c42e803547053430772b85d0fcad",
+      "errors": [
+        "GitHub PNG binary upload blocked: the current connector session could not transfer the local PNG bytes into GitHub create_blob; Desktop Commander devices are offline. Caption TXT was committed and verified. No Metricool scheduling or publication occurred."
+      ]
     }
   ],
-  "nextRunAt": "2026-11-25T08:00:00+05:00",
+  "nextRunAt": "2026-11-26T08:00:00+05:00",
   "timezone": "Asia/Karachi",
   "plannedSchedule": "Daily, flexible morning target around 08:00 PKT; existing automation schedule unchanged",
   "rules": {
