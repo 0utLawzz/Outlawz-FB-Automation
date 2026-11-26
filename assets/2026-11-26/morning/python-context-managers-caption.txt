@@ -1,0 +1,10 @@
+Python tip: use a context manager when opening files.
+
+with open("data.csv", encoding="utf-8") as file:
+    data = file.read()
+
+The `with` statement calls the file object's cleanup logic when the block exits—including when an exception is raised—so you don't have to remember to close the file manually.
+
+Use context managers for resources that need reliable cleanup, such as files and database connections.
+
+#Python #PythonTips #Automation #DeveloperTools #CodingBestPractices #OutLawZAutomation
