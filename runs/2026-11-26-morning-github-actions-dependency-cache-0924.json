@@ -1,0 +1,92 @@
+{
+  "runId": "2026-11-26-morning-github-actions-dependency-cache-0924",
+  "startedAt": "2026-11-26T09:12:43+05:00",
+  "finishedAt": "2026-11-26T09:24:49+05:00",
+  "status": "success",
+  "summary": "Generated original GitHub Actions dependency-cache artwork and caption, committed and verified both assets in GitHub, scheduled exactly one Facebook post for 28 November 2026 at 08:00 PKT because the 27 November morning slot was already occupied, and verified the exact caption, media, Facebook provider, time, auto-publish, draft, and post type.",
+  "topic": "GitHub Actions dependency caching — key caches by runner OS and lockfile hash",
+  "caption": "GitHub Actions tip: cache package-manager data so your workflow does not have to download the same dependencies on every run.\n\nBuild the cache key from the runner OS and your lockfile hash—for example, hashFiles('**/package-lock.json'). When the lockfile changes, the key changes too. Add restore-keys as a fallback so a compatible older cache can still be restored while a fresh cache is saved.\n\nKeep secrets out of caches, and cache only data that is safe to reuse between workflow runs.\n\n#GitHubActions #GitHub #CICD #DevOps #Automation #DeveloperTools #OutLawZAutomation",
+  "imagePath": "assets/2026-11-26/morning/github-actions-dependency-cache.png",
+  "localImagePath": "/mnt/data/outlawz-github-actions-cache.png",
+  "captionPath": "assets/2026-11-26/morning/github-actions-dependency-cache-caption.txt",
+  "localCaptionPath": "/mnt/data/outlawz-github-actions-cache-caption.txt",
+  "githubPngBlobSha": "bbd6594e6c8a530cb66eaecdfbc91f8c0875db28",
+  "githubCaptionBlobSha": "7079c7392372022aa3b5f64ff401f5888bc1104d",
+  "githubAssetsCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/3ac5afcfaaf2585099a9c99353016365f9c9f2e6",
+  "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0fdabdc0e281af0f73bf4263b92464c96c97ceb9",
+  "rawMediaUrl": "https://raw.githubusercontent.com/0utLawzz/Outlawz-FB-Automation/main/assets/2026-11-26/morning/github-actions-dependency-cache.png",
+  "metricoolPostId": 442636502,
+  "metricoolPostUuid": "-3416227486593429696",
+  "metricoolPlannerUrl": "https://app.metricool.com/planner/calendar?blogId=7508377&openWithPostUuid=-3416227486593429696",
+  "metricoolHostedMediaUrl": "https://static.metricool.com/planner/202611/7508377-file-3545765547049040451.png",
+  "scheduledAt": "2026-11-28T08:00:00+05:00",
+  "targetScheduledAt": "2026-11-28T08:00:00+05:00",
+  "provider": "Facebook",
+  "autoPublish": true,
+  "draft": false,
+  "facebookData": {
+    "type": "POST"
+  },
+  "timezone": "Asia/Karachi",
+  "nextRunAt": "2026-11-27T08:00:00+05:00",
+  "selectionNote": "The 27 November 2026 08:00 PKT slot already contained the previously verified Python context-manager post, so this run used the next open morning slot: 28 November 2026 at 08:00 PKT.",
+  "verification": {
+    "scheduledPostsForTargetDate": 1,
+    "exactCaption": true,
+    "mediaPresent": true,
+    "providerFacebook": true,
+    "scheduledDateTimeExact": true,
+    "autoPublishTrue": true,
+    "draftFalse": true,
+    "facebookTypePost": true,
+    "rawGithubImageUrlSubmitted": true,
+    "captionFileMatchesMetricool": true,
+    "githubPngPathAndBlobVerified": true,
+    "githubCaptionPathAndExactTextVerified": true
+  },
+  "steps": [
+    {
+      "name": "Inspect recent GitHub assets, captions, and run records",
+      "status": "completed",
+      "timestamp": "2026-11-26T09:12:43+05:00",
+      "details": "Inspected the main-branch tree, recent captions, run records, and dashboard. Avoided Python pathlib, n8n retry/error handling, Google Sheets idempotent sync, GitHub Actions concurrency, MCP least privilege, Vercel environment scopes, Make routers/filters, Apps Script batch operations, and Python context managers. The 27 November 08:00 slot was already occupied; selected GitHub Actions dependency caching for the next open morning."
+    },
+    {
+      "name": "Generate fresh original PNG",
+      "status": "completed",
+      "timestamp": "2026-11-26T09:21:00+05:00",
+      "details": "Created a new 512×512 OutLawZ dark-tech black/orange/silver infographic explaining dependency cache keys, cache hits/misses, and restore-key fallback. Saved as a fresh PNG; no existing artwork reused."
+    },
+    {
+      "name": "Create caption TXT",
+      "status": "completed",
+      "timestamp": "2026-11-26T09:14:00+05:00",
+      "details": "Wrote a concise accurate UTF-8 caption about caching package-manager data with runner OS and lockfile-hash keys, restore-keys fallback, and keeping secrets out of caches. Final TXT was aligned byte-for-byte with Metricool text."
+    },
+    {
+      "name": "Commit PNG and caption to GitHub",
+      "status": "completed",
+      "timestamp": "2026-11-26T09:24:09+05:00",
+      "details": "Committed the PNG and caption to the exact morning asset paths on main. Verified PNG blob SHA bbd6594e6c8a530cb66eaecdfbc91f8c0875db28 and caption blob SHA 7079c7392372022aa3b5f64ff401f5888bc1104d. Caption's trailing newline was removed in a follow-up commit so the committed TXT matches Metricool text exactly. No Dropbox writes."
+    },
+    {
+      "name": "Schedule Metricool Facebook post",
+      "status": "completed",
+      "timestamp": "2026-11-26T09:22:00+05:00",
+      "details": "Created one post for brand 7508377 using the committed public raw GitHub PNG URL, Facebook provider only, autoPublish=true, draft=false, facebookData.type=POST, and publicationDate 2026-11-28 08:00 Asia/Karachi. Metricool returned post ID 442636502."
+    },
+    {
+      "name": "Verify Metricool scheduled post",
+      "status": "completed",
+      "timestamp": "2026-11-26T09:24:49+05:00",
+      "details": "Queried scheduled posts for 28 November. Exactly one post was returned; its text exactly matches the committed caption TXT, one media item is present, provider is Facebook/PENDING, scheduled time is 08:00 Asia/Karachi, autoPublish=true, draft=false, and facebookData.type=POST."
+    },
+    {
+      "name": "Update dashboard and append run record",
+      "status": "completed",
+      "timestamp": "2026-11-26T09:24:49+05:00",
+      "details": "Writing this success record and updating docs/status.json only after GitHub and Metricool verification passed. Existing dashboard history is preserved."
+    }
+  ],
+  "errors": []
+}
