@@ -7,7 +7,7 @@
     "status": "success",
     "summary": "Generated original Python context-manager artwork and caption, committed both PNG and TXT to GitHub, scheduled exactly one Facebook post in Metricool for 27 November 2026 at 08:00 PKT, and verified exact caption, media presence, provider, and scheduled settings.",
     "topic": "Python context managers — reliable file cleanup with the with statement",
-    "caption": "Python tip: use a context manager when opening files.\n\nwith open(\"data.csv\", encoding=\"utf-8\") as file:\n    data = file.read()\n\nThe `with` statement calls the file object's cleanup logic when the block exits—including when an exception is raised—so you don't have to remember to close the file manually.\n\nUse context managers for resources that need reliable cleanup, such as files and database connections.\n\n#Python #PythonTips #Automation #DeveloperTools #CodingBestPractices #OutLawZAutomation\n",
+    "caption": "Python tip: use a context manager when opening files.\n\nwith open(\"data.csv\", encoding=\"utf-8\") as file:\n    data = file.read()\n\nThe `with` statement calls the file object's cleanup logic when the block exits—including when an exception is raised—so you don't have to remember to close the file manually.\n\nUse context managers for resources that need reliable cleanup, such as files and database connections.\n\n#Python #PythonTips #Automation #DeveloperTools #CodingBestPractices #OutLawZAutomation",
     "imagePath": "assets/2026-11-26/morning/python-context-managers.png",
     "localImagePath": "/mnt/data/outlawz-python-context-managers.png",
     "captionPath": "assets/2026-11-26/morning/python-context-managers-caption.txt",
@@ -60,7 +60,7 @@
         "name": "Verify Metricool scheduled post",
         "status": "completed",
         "timestamp": "2026-11-26T08:51:45+05:00",
-        "details": "Queried scheduled posts for 2026-11-27. Exactly one post was returned; caption matched exactly, Facebook provider was PENDING, hosted media was present, publication time was 08:00 Asia/Karachi, autoPublish=true, draft=false, and facebookData.type=POST."
+        "details": "Queried scheduled posts for 2026-11-27. Exactly one post was returned; caption now matches the committed TXT exactly, Facebook provider is PENDING, hosted media is present, publication time is 08:00 Asia/Karachi, autoPublish=true, draft=false, and facebookData.type=POST."
       },
       {
         "name": "Update dashboard and append run record",
