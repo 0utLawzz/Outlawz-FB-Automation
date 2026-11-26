@@ -1,80 +1,75 @@
 {
   "automation": "OutLawZ Morning Post",
   "lastRun": {
-    "runId": "2026-11-25-morning-apps-script-batch-operations-0914",
-    "startedAt": "2026-11-25T09:08:35+05:00",
-    "finishedAt": "2026-11-25T09:14:50+05:00",
-    "status": "blocked",
-    "summary": "Generated original Google Apps Script batch-operations artwork and caption. Caption was committed and verified on GitHub; PNG remains preserved locally because the current connector session could not hand the local binary file to GitHub create_blob. Metricool scheduling was stopped; no post was created.",
-    "topic": "Google Apps Script — batch reads and writes with getValues() and setValues()",
-    "caption": "Google Apps Script tip: avoid calling getValue() and setValue() repeatedly inside a loop when processing a large range.\n\nRead the range once with getValues(), transform the 2D array in memory, then write the result with one setValues() call. Fewer Spreadsheet service calls can make bulk jobs significantly faster.\n\nMake sure the output array dimensions match the destination range, and only write the columns you intend to update.\n\n#GoogleAppsScript #GoogleSheets #Automation #JavaScript #WorkflowAutomation #OutLawZAutomation\n",
-    "imagePath": "assets/2026-11-25/morning/google-apps-script-batch-operations.png",
-    "localImagePath": "/mnt/data/outlawz-apps-script-batch-operations.png",
-    "originalGeneratedImagePath": "/mnt/data/a_high_contrast_tech_tutorial_marketing_graphic_in.png",
-    "captionPath": "assets/2026-11-25/morning/google-apps-script-batch-operations-caption.txt",
-    "localCaptionPath": "/mnt/data/outlawz-apps-script-batch-operations-caption.txt",
-    "githubPngBlobSha": null,
-    "githubCaptionBlobSha": "f10529f42fb2b46b8f2be65e1bc5a84ecccb15d4",
-    "githubCaptionCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0f41110249a3c42e803547053430772b85d0fcad",
-    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0f41110249a3c42e803547053430772b85d0fcad",
-    "commitScope": "caption-only; PNG not committed",
-    "rawMediaUrl": null,
-    "metricoolPostId": null,
-    "metricoolPostUuid": null,
-    "metricoolPlannerUrl": null,
-    "metricoolHostedMediaUrl": null,
-    "scheduledAt": null,
-    "targetScheduledAt": "2026-11-26T08:00:00+05:00",
-    "provider": null,
-    "targetProvider": "Facebook",
-    "nextRunAt": "2026-11-26T08:00:00+05:00",
+    "runId": "2026-11-26-morning-python-context-managers-0843",
+    "startedAt": "2026-11-26T08:43:15+05:00",
+    "finishedAt": "2026-11-26T08:52:01+05:00",
+    "status": "success",
+    "summary": "Generated original Python context-manager artwork and caption, committed both PNG and TXT to GitHub, scheduled exactly one Facebook post in Metricool for 27 November 2026 at 08:00 PKT, and verified exact caption, media presence, provider, and scheduled settings.",
+    "topic": "Python context managers — reliable file cleanup with the with statement",
+    "caption": "Python tip: use a context manager when opening files.\n\nwith open(\"data.csv\", encoding=\"utf-8\") as file:\n    data = file.read()\n\nThe `with` statement calls the file object's cleanup logic when the block exits—including when an exception is raised—so you don't have to remember to close the file manually.\n\nUse context managers for resources that need reliable cleanup, such as files and database connections.\n\n#Python #PythonTips #Automation #DeveloperTools #CodingBestPractices #OutLawZAutomation\n",
+    "imagePath": "assets/2026-11-26/morning/python-context-managers.png",
+    "localImagePath": "/mnt/data/outlawz-python-context-managers.png",
+    "captionPath": "assets/2026-11-26/morning/python-context-managers-caption.txt",
+    "localCaptionPath": "/mnt/data/outlawz-python-context-managers-caption.txt",
+    "githubPngBlobSha": "47ed18ea838cb3e6f48810b8f22455df88267828",
+    "githubCaptionBlobSha": "267b236c73c9ff2d557ebdc9c7d2b6025240b8c5",
+    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0ace42e74b4837e105d79799f39c8b8ad801fa7e",
+    "commitScope": "PNG and caption committed",
+    "rawMediaUrl": "https://raw.githubusercontent.com/0utLawzz/Outlawz-FB-Automation/main/assets/2026-11-26/morning/python-context-managers.png",
+    "metricoolPostId": 442622241,
+    "metricoolPostUuid": "-4272844139875907519",
+    "metricoolPlannerUrl": "https://app.metricool.com/planner/calendar?blogId=7508377&openWithPostUuid=-4272844139875907519",
+    "metricoolHostedMediaUrl": "https://static.metricool.com/planner/202611/7508377-file-16013324802469769555.png",
+    "scheduledAt": "2026-11-27T08:00:00+05:00",
+    "targetScheduledAt": "2026-11-27T08:00:00+05:00",
+    "provider": "Facebook",
+    "nextRunAt": "2026-11-27T08:00:00+05:00",
     "steps": [
       {
         "name": "Inspect recent GitHub assets, captions, and run records",
         "status": "completed",
-        "timestamp": "2026-11-25T09:14:50+05:00",
-        "details": "Inspected repository tree, recent captions, recent run records, and docs/status.json. Recent topics included Python pathlib, n8n retry/error handling, Google Sheets idempotent sync, GitHub Actions concurrency, MCP least privilege, Vercel environment scopes, and Make routers versus filters. Selected Apps Script batch reads/writes as a distinct practical topic."
+        "timestamp": "2026-11-26T08:44:00+05:00",
+        "details": "Inspected main branch assets, captions, recent run records, and docs/status.json. Recent topics included Python pathlib, n8n retries/error workflows, Google Sheets idempotent sync, GitHub Actions concurrency, MCP least privilege, Vercel environment scopes, Make routers versus filters, and Apps Script batch operations. Selected Python context managers as a distinct practical topic."
       },
       {
         "name": "Generate fresh original PNG",
         "status": "completed",
-        "timestamp": "2026-11-25T09:14:50+05:00",
-        "details": "Generated a fresh OutLawZ dark-tech orange/black/silver graphic explaining the getValues() → in-memory processing → setValues() pattern. Preserved the original generated PNG and an optimized 512×512 PNG locally."
+        "timestamp": "2026-11-26T08:47:00+05:00",
+        "details": "Created a new 512×512 OutLawZ dark-tech orange/black/silver infographic about Python with-open file handling. Saved locally as PNG."
       },
       {
         "name": "Create caption TXT",
         "status": "completed",
-        "timestamp": "2026-11-25T09:14:50+05:00",
-        "details": "Created UTF-8 caption with accurate Apps Script batch-operation guidance and relevant hashtags."
+        "timestamp": "2026-11-26T08:48:00+05:00",
+        "details": "Created concise UTF-8 caption explaining reliable file cleanup when a with block exits, including exception paths."
       },
       {
         "name": "Commit PNG and caption to GitHub",
-        "status": "blocked",
-        "timestamp": "2026-11-25T09:14:50+05:00",
-        "details": "Caption TXT was committed to main and fetched back for exact-content verification. PNG binary upload was not completed: the current connector session has no direct binary file handoff from the local generated PNG to GitHub create_blob; the connected Desktop Commander devices are offline. The PNG is preserved locally. No Dropbox fallback was used."
+        "status": "completed",
+        "timestamp": "2026-11-26T08:50:58+05:00",
+        "details": "Committed PNG and caption as blobs to main in one Git tree commit. Verified both exact paths, PNG blob SHA and 17,675-byte size, caption blob SHA and exact text readback."
       },
       {
         "name": "Schedule Metricool Facebook post",
-        "status": "not_started",
-        "timestamp": "2026-11-25T09:14:50+05:00",
-        "details": "Stopped because the PNG is not committed and no public raw GitHub image URL exists. No Metricool post was created."
+        "status": "completed",
+        "timestamp": "2026-11-26T08:51:00+05:00",
+        "details": "Created one scheduled post for brand 7508377 with Facebook provider only, autoPublish=true, draft=false, facebookData.type=POST, raw GitHub PNG URL, and Asia/Karachi publicationDate 2026-11-27 08:00."
       },
       {
         "name": "Verify Metricool scheduled post",
-        "status": "not_started",
-        "timestamp": "2026-11-25T09:14:50+05:00",
-        "details": "Not applicable because scheduling was not started."
+        "status": "completed",
+        "timestamp": "2026-11-26T08:51:45+05:00",
+        "details": "Queried scheduled posts for 2026-11-27. Exactly one post was returned; caption matched exactly, Facebook provider was PENDING, hosted media was present, publication time was 08:00 Asia/Karachi, autoPublish=true, draft=false, and facebookData.type=POST."
       },
       {
         "name": "Update dashboard and append run record",
         "status": "completed",
-        "timestamp": "2026-11-25T09:14:50+05:00",
-        "details": "Recorded this run as blocked, preserved existing dashboard history, and appended the run record. Dashboard success was not set."
+        "timestamp": "2026-11-26T08:52:01+05:00",
+        "details": "Appending this run record and updating docs/status.json while preserving existing history. Dashboard success reflects the completed GitHub and Metricool verification checks."
       }
     ],
-    "errors": [
-      "GitHub PNG binary upload blocked: the current connector session could not transfer the local PNG bytes into GitHub create_blob; Desktop Commander devices are offline. Caption TXT was committed and verified. No Metricool scheduling or publication occurred."
-    ]
+    "errors": []
   },
   "history": [
     {
@@ -163,9 +158,20 @@
       "errors": [
         "GitHub PNG binary upload blocked: the current connector session could not transfer the local PNG bytes into GitHub create_blob; Desktop Commander devices are offline. Caption TXT was committed and verified. No Metricool scheduling or publication occurred."
       ]
+    },
+    {
+      "runId": "2026-11-26-morning-python-context-managers-0843",
+      "status": "success",
+      "summary": "Generated original Python context-manager artwork and caption, committed both assets to GitHub, scheduled exactly one Facebook post for 27 November 2026 at 08:00 PKT, and verified caption, media, provider, and time.",
+      "topic": "Python context managers — reliable file cleanup with the with statement",
+      "scheduledAt": "2026-11-27T08:00:00+05:00",
+      "provider": "Facebook",
+      "metricoolPostId": 442622241,
+      "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0ace42e74b4837e105d79799f39c8b8ad801fa7e",
+      "errors": []
     }
   ],
-  "nextRunAt": "2026-11-26T08:00:00+05:00",
+  "nextRunAt": "2026-11-27T08:00:00+05:00",
   "timezone": "Asia/Karachi",
   "plannedSchedule": "Daily, flexible morning target around 08:00 PKT; existing automation schedule unchanged",
   "rules": {
