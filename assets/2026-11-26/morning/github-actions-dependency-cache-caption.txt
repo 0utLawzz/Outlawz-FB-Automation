@@ -1,0 +1,7 @@
+GitHub Actions tip: cache package-manager data so your workflow does not have to download the same dependencies on every run.
+
+Build the cache key from the runner OS and your lockfile hash—for example, hashFiles('**/package-lock.json'). When the lockfile changes, the key changes too. Add restore-keys as a fallback so a compatible older cache can still be restored while a fresh cache is saved.
+
+Keep secrets out of caches, and cache only data that is safe to reuse between workflow runs.
+
+#GitHubActions #GitHub #CICD #DevOps #Automation #DeveloperTools #OutLawZAutomation
