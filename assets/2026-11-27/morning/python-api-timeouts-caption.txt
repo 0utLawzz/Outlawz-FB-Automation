@@ -1,0 +1,10 @@
+Python API tip: always set a timeout when making HTTP requests with `requests`.
+
+response = requests.get(api_url, timeout=(3, 10))
+response.raise_for_status()
+
+The tuple sets separate connection and read timeouts in seconds. Handle `requests.exceptions.Timeout`, and retry only when repeating the operation is safe. A Requests timeout is not a strict total-request deadline.
+
+Bounded waits make automations more predictable and easier to recover.
+
+#Python #PythonTips #APIs #Automation #Requests #DeveloperTools #OutLawZAutomation
