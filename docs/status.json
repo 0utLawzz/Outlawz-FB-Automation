@@ -1,96 +1,103 @@
 {
   "automation": "OutLawZ Morning Post",
   "lastRun": {
-    "runId": "2026-11-26-morning-github-actions-dependency-cache-0924",
-    "startedAt": "2026-11-26T09:12:43+05:00",
-    "finishedAt": "2026-11-26T09:24:49+05:00",
-    "status": "success",
-    "summary": "Generated original GitHub Actions dependency-cache artwork and caption, committed and verified both assets in GitHub, scheduled exactly one Facebook post for 28 November 2026 at 08:00 PKT because the 27 November morning slot was already occupied, and verified the exact caption, media, Facebook provider, time, auto-publish, draft, and post type.",
-    "topic": "GitHub Actions dependency caching — key caches by runner OS and lockfile hash",
-    "caption": "GitHub Actions tip: cache package-manager data so your workflow does not have to download the same dependencies on every run.\n\nBuild the cache key from the runner OS and your lockfile hash—for example, hashFiles('**/package-lock.json'). When the lockfile changes, the key changes too. Add restore-keys as a fallback so a compatible older cache can still be restored while a fresh cache is saved.\n\nKeep secrets out of caches, and cache only data that is safe to reuse between workflow runs.\n\n#GitHubActions #GitHub #CICD #DevOps #Automation #DeveloperTools #OutLawZAutomation",
-    "imagePath": "assets/2026-11-26/morning/github-actions-dependency-cache.png",
-    "localImagePath": "/mnt/data/outlawz-github-actions-cache.png",
-    "captionPath": "assets/2026-11-26/morning/github-actions-dependency-cache-caption.txt",
-    "localCaptionPath": "/mnt/data/outlawz-github-actions-cache-caption.txt",
-    "githubPngBlobSha": "bbd6594e6c8a530cb66eaecdfbc91f8c0875db28",
-    "githubCaptionBlobSha": "7079c7392372022aa3b5f64ff401f5888bc1104d",
-    "githubAssetsCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/3ac5afcfaaf2585099a9c99353016365f9c9f2e6",
-    "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0fdabdc0e281af0f73bf4263b92464c96c97ceb9",
-    "rawMediaUrl": "https://raw.githubusercontent.com/0utLawzz/Outlawz-FB-Automation/main/assets/2026-11-26/morning/github-actions-dependency-cache.png",
-    "metricoolPostId": 442636502,
-    "metricoolPostUuid": "-3416227486593429696",
-    "metricoolPlannerUrl": "https://app.metricool.com/planner/calendar?blogId=7508377&openWithPostUuid=-3416227486593429696",
-    "metricoolHostedMediaUrl": "https://static.metricool.com/planner/202611/7508377-file-3545765547049040451.png",
-    "scheduledAt": "2026-11-28T08:00:00+05:00",
-    "targetScheduledAt": "2026-11-28T08:00:00+05:00",
-    "provider": "Facebook",
+    "runId": "2026-11-27-morning-python-api-timeouts-0925",
+    "startedAt": "2026-11-27T09:15:10+05:00",
+    "finishedAt": "2026-11-27T09:25:53.835+05:00",
+    "status": "blocked",
+    "summary": "Generated an original Python API-timeout infographic and caption. Caption TXT was committed and verified on GitHub. The local PNG could not be handed to the GitHub binary-blob upload tool as a complete base64 payload, so the PNG was not committed and Metricool scheduling was stopped. No post was created.",
+    "topic": "Python Requests — set connection and read timeouts to prevent stalled API calls",
+    "caption": "Python API tip: always set a timeout when making HTTP requests with `requests`.\n\nresponse = requests.get(api_url, timeout=(3, 10))\nresponse.raise_for_status()\n\nThe tuple sets separate connection and read timeouts in seconds. Handle `requests.exceptions.Timeout`, and retry only when repeating the operation is safe. A Requests timeout is not a strict total-request deadline.\n\nBounded waits make automations more predictable and easier to recover.\n\n#Python #PythonTips #APIs #Automation #Requests #DeveloperTools #OutLawZAutomation",
+    "imagePath": "assets/2026-11-27/morning/python-api-timeouts.png",
+    "localImagePath": "/mnt/data/outlawz-python-api-timeouts.png",
+    "imageDimensions": "512x512",
+    "captionPath": "assets/2026-11-27/morning/python-api-timeouts-caption.txt",
+    "localCaptionPath": "/mnt/data/outlawz-python-api-timeouts-caption.txt",
+    "githubPngBlobSha": null,
+    "githubCaptionBlobSha": "3bb8d3beddb9b236c0ae312a1db9231852979e8d",
+    "githubCaptionCommitSha": "b8fe06a685d748d866c35f98440bc71e8109b78b",
+    "githubCaptionCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/b8fe06a685d748d866c35f98440bc71e8109b78b",
+    "githubCommitUrl": null,
+    "rawMediaUrl": null,
+    "metricoolPostId": null,
+    "metricoolPostUuid": null,
+    "metricoolPlannerUrl": null,
+    "scheduledAt": null,
+    "targetScheduledAt": "2026-11-29T08:00:00+05:00",
+    "provider": null,
     "autoPublish": true,
     "draft": false,
     "facebookData": {
       "type": "POST"
     },
     "timezone": "Asia/Karachi",
-    "nextRunAt": "2026-11-27T08:00:00+05:00",
-    "selectionNote": "The 27 November 2026 08:00 PKT slot already contained the previously verified Python context-manager post, so this run used the next open morning slot: 28 November 2026 at 08:00 PKT.",
+    "nextRunAt": null,
+    "selectionNote": "The 28 November 2026 08:00 PKT slot was already occupied by Metricool post 442636502. A Metricool query for 29 November returned no scheduled posts, so 29 November at 08:00 PKT was the next open morning slot.",
     "verification": {
-      "scheduledPostsForTargetDate": 1,
-      "exactCaption": true,
-      "mediaPresent": true,
-      "providerFacebook": true,
-      "scheduledDateTimeExact": true,
-      "autoPublishTrue": true,
-      "draftFalse": true,
-      "facebookTypePost": true,
-      "rawGithubImageUrlSubmitted": true,
-      "captionFileMatchesMetricool": true,
-      "githubPngPathAndBlobVerified": true,
-      "githubCaptionPathAndExactTextVerified": true
+      "scheduledPostsForTargetDateBeforeCreation": 0,
+      "exactCaption": false,
+      "mediaPresent": false,
+      "providerFacebook": false,
+      "scheduledDateTimeExact": false,
+      "autoPublishTrue": false,
+      "draftFalse": false,
+      "facebookTypePost": false,
+      "rawGithubImageUrlSubmitted": false,
+      "captionFileMatchesMetricool": false,
+      "githubPngPathAndBlobVerified": false,
+      "githubCaptionPathAndExactTextVerified": true,
+      "postCreated": false
     },
     "steps": [
       {
         "name": "Inspect recent GitHub assets, captions, and run records",
         "status": "completed",
-        "timestamp": "2026-11-26T09:12:43+05:00",
-        "details": "Inspected the main-branch tree, recent captions, run records, and dashboard. Avoided Python pathlib, n8n retry/error handling, Google Sheets idempotent sync, GitHub Actions concurrency, MCP least privilege, Vercel environment scopes, Make routers/filters, Apps Script batch operations, and Python context managers. The 27 November 08:00 slot was already occupied; selected GitHub Actions dependency caching for the next open morning."
+        "timestamp": "2026-11-27T09:15:10+05:00",
+        "details": "Reviewed the latest assets, captions, run records, and docs/status.json. Avoided the recent topics: Python pathlib, context managers, n8n retry/error handling, Google Sheets idempotent sync and batch operations, GitHub Actions concurrency and dependency caching, MCP least privilege, Vercel environment scopes, and Make routers versus filters. Confirmed 28 November 08:00 was occupied and 29 November 08:00 was free."
       },
       {
         "name": "Generate fresh original PNG",
         "status": "completed",
-        "timestamp": "2026-11-26T09:21:00+05:00",
-        "details": "Created a new 512×512 OutLawZ dark-tech black/orange/silver infographic explaining dependency cache keys, cache hits/misses, and restore-key fallback. Saved as a fresh PNG; no existing artwork reused."
+        "timestamp": "2026-11-27T09:20:00+05:00",
+        "details": "Generated a new dark-tech orange/black/silver OutLawZ infographic explaining requests.get(..., timeout=(3, 10)), separate connect/read limits, and the risk of unbounded waits. Preserved as a local 512×512 PNG; no previous artwork reused."
       },
       {
         "name": "Create caption TXT",
         "status": "completed",
-        "timestamp": "2026-11-26T09:14:00+05:00",
-        "details": "Wrote a concise accurate UTF-8 caption about caching package-manager data with runner OS and lockfile-hash keys, restore-keys fallback, and keeping secrets out of caches. Final TXT was aligned byte-for-byte with Metricool text."
+        "timestamp": "2026-11-27T09:21:00+05:00",
+        "details": "Created a concise accurate UTF-8 caption explaining Requests connect/read timeout tuples, Timeout handling, safe retry conditions, and the fact that the Requests timeout is not a strict total-request deadline."
       },
       {
         "name": "Commit PNG and caption to GitHub",
-        "status": "completed",
-        "timestamp": "2026-11-26T09:24:09+05:00",
-        "details": "Committed the PNG and caption to the exact morning asset paths on main. Verified PNG blob SHA bbd6594e6c8a530cb66eaecdfbc91f8c0875db28 and caption blob SHA 7079c7392372022aa3b5f64ff401f5888bc1104d. Caption's trailing newline was removed in a follow-up commit so the committed TXT matches Metricool text exactly. No Dropbox writes."
+        "status": "blocked",
+        "timestamp": "2026-11-27T09:25:53.835+05:00",
+        "details": "Caption TXT was committed to the exact requested path and read back with matching text and blob SHA. The GitHub connector's create_blob requires the complete PNG bytes as base64, but this session had no reliable local-file-to-connector handoff; an incomplete payload-length check prevented creating a blob. The PNG remains preserved locally. No Dropbox writes or alternate formats were used."
       },
       {
         "name": "Schedule Metricool Facebook post",
-        "status": "completed",
-        "timestamp": "2026-11-26T09:22:00+05:00",
-        "details": "Created one post for brand 7508377 using the committed public raw GitHub PNG URL, Facebook provider only, autoPublish=true, draft=false, facebookData.type=POST, and publicationDate 2026-11-28 08:00 Asia/Karachi. Metricool returned post ID 442636502."
+        "status": "not_attempted",
+        "timestamp": "2026-11-27T09:25:53.835+05:00",
+        "details": "Stopped as required because the PNG was not committed and no public raw GitHub image URL exists for this run. No Metricool post was created."
       },
       {
         "name": "Verify Metricool scheduled post",
-        "status": "completed",
-        "timestamp": "2026-11-26T09:24:49+05:00",
-        "details": "Queried scheduled posts for 28 November. Exactly one post was returned; its text exactly matches the committed caption TXT, one media item is present, provider is Facebook/PENDING, scheduled time is 08:00 Asia/Karachi, autoPublish=true, draft=false, and facebookData.type=POST."
+        "status": "not_attempted",
+        "timestamp": "2026-11-27T09:25:53.835+05:00",
+        "details": "Not applicable because no post was created. The pre-scheduling query confirmed the 29 November target date was empty."
       },
       {
         "name": "Update dashboard and append run record",
         "status": "completed",
-        "timestamp": "2026-11-26T09:24:49+05:00",
-        "details": "Writing this success record and updating docs/status.json only after GitHub and Metricool verification passed. Existing dashboard history is preserved."
+        "timestamp": "2026-11-27T09:25:53.835+05:00",
+        "details": "Recorded this run as blocked, preserved the existing history, appended this run record, and disabled the recurring Morning Post automation pending a working PNG binary upload handoff."
       }
     ],
-    "errors": []
+    "blockedAtStep": 4,
+    "automationDisabled": true,
+    "automationId": "Automation_47a50f0006a08191b38213ae7c49eb40",
+    "errors": [
+      "Step 4 blocked: the local PNG bytes could not be transferred as a complete base64 payload to GitHub create_blob in this session. Caption TXT committed successfully; PNG not committed. Metricool scheduling and verification were not attempted."
+    ]
   },
   "history": [
     {
@@ -201,11 +208,24 @@
       "metricoolPostId": 442636502,
       "githubCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/0fdabdc0e281af0f73bf4263b92464c96c97ceb9",
       "errors": []
+    },
+    {
+      "runId": "2026-11-27-morning-python-api-timeouts-0925",
+      "status": "blocked",
+      "summary": "Generated an original Python API-timeout infographic and caption. Caption TXT was committed and verified on GitHub. The local PNG could not be handed to the GitHub binary-blob upload tool as a complete base64 payload, so the PNG was not committed and Metricool scheduling was stopped. No post was created.",
+      "topic": "Python Requests — set connection and read timeouts to prevent stalled API calls",
+      "scheduledAt": null,
+      "targetScheduledAt": "2026-11-29T08:00:00+05:00",
+      "provider": null,
+      "githubCaptionCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/b8fe06a685d748d866c35f98440bc71e8109b78b",
+      "errors": [
+        "Step 4 blocked: the local PNG bytes could not be transferred as a complete base64 payload to GitHub create_blob in this session. Caption TXT committed successfully; PNG not committed. Metricool scheduling and verification were not attempted."
+      ]
     }
   ],
-  "nextRunAt": "2026-11-27T08:00:00+05:00",
+  "nextRunAt": null,
   "timezone": "Asia/Karachi",
-  "plannedSchedule": "Daily, flexible morning target around 08:00 PKT; existing automation schedule unchanged",
+  "plannedSchedule": "Daily flexible morning target around 08:00 PKT; currently disabled pending restoration of GitHub PNG binary upload.",
   "rules": {
     "brandId": 7508377,
     "provider": "Facebook",
@@ -217,5 +237,8 @@
       "scheduled time"
     ],
     "storage": "GitHub primary; Dropbox read-only legacy archive only"
-  }
+  },
+  "automationEnabled": false,
+  "disabledAt": "2026-11-27T09:25:53.835+05:00",
+  "disabledReason": "Paused after the 2026-11-27 run was blocked at Step 4 because the local PNG could not be committed to GitHub; scheduling requires a committed public raw PNG URL."
 }
