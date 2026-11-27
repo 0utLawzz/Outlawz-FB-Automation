@@ -1,0 +1,99 @@
+{
+  "runId": "2026-11-27-morning-python-api-timeouts-0925",
+  "startedAt": "2026-11-27T09:15:10+05:00",
+  "finishedAt": "2026-11-27T09:25:53.835+05:00",
+  "status": "blocked",
+  "summary": "Generated an original Python API-timeout infographic and caption. Caption TXT was committed and verified on GitHub. The local PNG could not be handed to the GitHub binary-blob upload tool as a complete base64 payload, so the PNG was not committed and Metricool scheduling was stopped. No post was created.",
+  "topic": "Python Requests — set connection and read timeouts to prevent stalled API calls",
+  "caption": "Python API tip: always set a timeout when making HTTP requests with `requests`.\n\nresponse = requests.get(api_url, timeout=(3, 10))\nresponse.raise_for_status()\n\nThe tuple sets separate connection and read timeouts in seconds. Handle `requests.exceptions.Timeout`, and retry only when repeating the operation is safe. A Requests timeout is not a strict total-request deadline.\n\nBounded waits make automations more predictable and easier to recover.\n\n#Python #PythonTips #APIs #Automation #Requests #DeveloperTools #OutLawZAutomation",
+  "imagePath": "assets/2026-11-27/morning/python-api-timeouts.png",
+  "localImagePath": "/mnt/data/outlawz-python-api-timeouts.png",
+  "imageDimensions": "512x512",
+  "captionPath": "assets/2026-11-27/morning/python-api-timeouts-caption.txt",
+  "localCaptionPath": "/mnt/data/outlawz-python-api-timeouts-caption.txt",
+  "githubPngBlobSha": null,
+  "githubCaptionBlobSha": "3bb8d3beddb9b236c0ae312a1db9231852979e8d",
+  "githubCaptionCommitSha": "b8fe06a685d748d866c35f98440bc71e8109b78b",
+  "githubCaptionCommitUrl": "https://github.com/0utLawzz/Outlawz-FB-Automation/commit/b8fe06a685d748d866c35f98440bc71e8109b78b",
+  "githubCommitUrl": null,
+  "rawMediaUrl": null,
+  "metricoolPostId": null,
+  "metricoolPostUuid": null,
+  "metricoolPlannerUrl": null,
+  "scheduledAt": null,
+  "targetScheduledAt": "2026-11-29T08:00:00+05:00",
+  "provider": null,
+  "autoPublish": true,
+  "draft": false,
+  "facebookData": {
+    "type": "POST"
+  },
+  "timezone": "Asia/Karachi",
+  "nextRunAt": null,
+  "selectionNote": "The 28 November 2026 08:00 PKT slot was already occupied by Metricool post 442636502. A Metricool query for 29 November returned no scheduled posts, so 29 November at 08:00 PKT was the next open morning slot.",
+  "verification": {
+    "scheduledPostsForTargetDateBeforeCreation": 0,
+    "exactCaption": false,
+    "mediaPresent": false,
+    "providerFacebook": false,
+    "scheduledDateTimeExact": false,
+    "autoPublishTrue": false,
+    "draftFalse": false,
+    "facebookTypePost": false,
+    "rawGithubImageUrlSubmitted": false,
+    "captionFileMatchesMetricool": false,
+    "githubPngPathAndBlobVerified": false,
+    "githubCaptionPathAndExactTextVerified": true,
+    "postCreated": false
+  },
+  "steps": [
+    {
+      "name": "Inspect recent GitHub assets, captions, and run records",
+      "status": "completed",
+      "timestamp": "2026-11-27T09:15:10+05:00",
+      "details": "Reviewed the latest assets, captions, run records, and docs/status.json. Avoided the recent topics: Python pathlib, context managers, n8n retry/error handling, Google Sheets idempotent sync and batch operations, GitHub Actions concurrency and dependency caching, MCP least privilege, Vercel environment scopes, and Make routers versus filters. Confirmed 28 November 08:00 was occupied and 29 November 08:00 was free."
+    },
+    {
+      "name": "Generate fresh original PNG",
+      "status": "completed",
+      "timestamp": "2026-11-27T09:20:00+05:00",
+      "details": "Generated a new dark-tech orange/black/silver OutLawZ infographic explaining requests.get(..., timeout=(3, 10)), separate connect/read limits, and the risk of unbounded waits. Preserved as a local 512×512 PNG; no previous artwork reused."
+    },
+    {
+      "name": "Create caption TXT",
+      "status": "completed",
+      "timestamp": "2026-11-27T09:21:00+05:00",
+      "details": "Created a concise accurate UTF-8 caption explaining Requests connect/read timeout tuples, Timeout handling, safe retry conditions, and the fact that the Requests timeout is not a strict total-request deadline."
+    },
+    {
+      "name": "Commit PNG and caption to GitHub",
+      "status": "blocked",
+      "timestamp": "2026-11-27T09:25:53.835+05:00",
+      "details": "Caption TXT was committed to the exact requested path and read back with matching text and blob SHA. The GitHub connector's create_blob requires the complete PNG bytes as base64, but this session had no reliable local-file-to-connector handoff; an incomplete payload-length check prevented creating a blob. The PNG remains preserved locally. No Dropbox writes or alternate formats were used."
+    },
+    {
+      "name": "Schedule Metricool Facebook post",
+      "status": "not_attempted",
+      "timestamp": "2026-11-27T09:25:53.835+05:00",
+      "details": "Stopped as required because the PNG was not committed and no public raw GitHub image URL exists for this run. No Metricool post was created."
+    },
+    {
+      "name": "Verify Metricool scheduled post",
+      "status": "not_attempted",
+      "timestamp": "2026-11-27T09:25:53.835+05:00",
+      "details": "Not applicable because no post was created. The pre-scheduling query confirmed the 29 November target date was empty."
+    },
+    {
+      "name": "Update dashboard and append run record",
+      "status": "completed",
+      "timestamp": "2026-11-27T09:25:53.835+05:00",
+      "details": "Recorded this run as blocked, preserved the existing history, appended this run record, and disabled the recurring Morning Post automation pending a working PNG binary upload handoff."
+    }
+  ],
+  "blockedAtStep": 4,
+  "automationDisabled": true,
+  "automationId": "Automation_47a50f0006a08191b38213ae7c49eb40",
+  "errors": [
+    "Step 4 blocked: the local PNG bytes could not be transferred as a complete base64 payload to GitHub create_blob in this session. Caption TXT committed successfully; PNG not committed. Metricool scheduling and verification were not attempted."
+  ]
+}
